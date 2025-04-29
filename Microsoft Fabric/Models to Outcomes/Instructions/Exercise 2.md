@@ -88,7 +88,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
      ![](./images/29042025(50).png)
 
-1. Navigate to the **Home menu**, click **Get Data**, and select **More...** to connect data from multiple sources.
+1. Navigate to the **Home menu**, click **Get data**, and select **More...** to connect data from multiple sources.
 
       ![](./images/29042025(51).png)
 
@@ -126,7 +126,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
 1. Open the **Visual Studio Code** located on the desktop of your lab environment.
 
-1. Navigate to the **Extensions** in VS Code and search for **Fabric Data Engineering - Remote** to install it.
+1. Navigate to the **Extensions** in VS Code and search for **Fabric Data Engineering VS Code** to install it.
 
     ![](./images/29042025(55).png)
 
@@ -146,11 +146,13 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(59).png)
 
-2. In VS Code, Select **Workspace** for the Synapse extension and choose the appropriate **ws-<inject key="Deployment ID" enableCopy="false"/>** from the dropdown menu.
+2. In VS Code, **Select** **Workspace** for the Synapse extension and choose the appropriate **ws-<inject key="Deployment ID" enableCopy="false"/>** from the dropdown menu.
 
     ![](./images/29042025(60).png)
 
-1. When prompted with the **"Do you trust the authors of the files in this folder?"** message, check the box labeled **Trust the authors of all files in the parent folder**. Click the **"Yes, I trust the authors"** button to enable all features and exit restricted mode in Visual Studio Code.
+1. When prompted with the **Do you trust the authors of the files in this folder?** message, check the box labeled **Trust the authors of all files in the parent folder**. Click the **Yes, I trust the authors** button to enable all features and exit restricted mode in Visual Studio Code.
+
+    ![](./images/29042025(63).png)
    
 1. Explore the Fabric Artifacts in your local VS Code IDE by **expanding the artifact types**.
 
