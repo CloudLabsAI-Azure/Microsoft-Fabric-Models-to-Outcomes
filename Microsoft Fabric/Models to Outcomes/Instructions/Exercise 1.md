@@ -345,7 +345,7 @@ for ax,col in zip(axes.flatten(), df_num_cols.columns):
 fig.delaxes(axes[1,2])
 ```
 
-![Screenshot that shows a notebook display of the box plot for numerical attributes.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/box-plots.jpg)
+![](./images/29042025(32).png)
 
 ### **Show the distribution of exited and non-exited customers**
 
@@ -361,7 +361,7 @@ for ind, item in enumerate (attr_list):
 fig.subplots_adjust(hspace=0.7)
 ```
 
-![Screenshot that shows a notebook display of the distribution of exited versus non-exited customers.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/bar-charts.jpg)
+![](./images/29042025(33).png)
 
 ### **Show the distribution of numerical attributes**
 
@@ -383,7 +383,7 @@ for i,j in itertools.zip_longest(columns, range(length)):
 plt.show()
 ```
 
-![Screenshot that shows a notebook display of numerical attributes.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/numerical-attributes.jpg)
+![](./images/29042025(34).png)
 
 ### **Perform feature engineering**
 
@@ -403,7 +403,7 @@ df_clean["NewEstSalaryScore"] = pd.qcut(df_clean['EstimatedSalary'], 10, labels 
 
 With the same steps to launch Data Wrangler, as discussed earlier, use the Data Wrangler to perform one-hot encoding. This cell shows the copied generated script for one-hot encoding:
 
-![Screenshot that shows one-hot encoding in Data Wrangler.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/1-hot-encoding-data-wrangler.png)
+![](./images/29042025(35).png)
 
 PythonCopy
 
@@ -686,7 +686,7 @@ plot_confusion_matrix(cfm, classes=['Non Churn','Churn'],
 tn, fp, fn, tp = cfm.ravel()
 ```
 
-![Screenshot that shows a notebook display of a confusion matrix for random forest with a maximum depth of four.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-random-forest-depth-4.jpg)
+![](./images/29042025(36).png)
 
 Create a confusion matrix for the random forest classifier with maximum depth of eight, with six features:
 
@@ -699,7 +699,7 @@ plot_confusion_matrix(cfm, classes=['Non Churn','Churn'],
 tn, fp, fn, tp = cfm.ravel()
 ```
 
-![Screenshot that shows a notebook display of a confusion matrix for random forest with a maximum depth of eight.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-random-forest-depth-8.jpg)
+![](./images/29042025(37).png)
 
 Create a confusion matrix for LightGBM:
 
@@ -712,7 +712,7 @@ plot_confusion_matrix(cfm, classes=['Non Churn','Churn'],
 tn, fp, fn, tp = cfm.ravel()
 ```
 
-![Screenshot that shows a notebook display of a confusion matrix for LightGBM.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-lgbm.jpg)
+![](./images/29042025(38).png)
 
 ### **Save results for Power BI**
 
@@ -775,7 +775,7 @@ Access your saved table in Power BI:
 
         **Note:** This shows an illustrated example of how you would analyze the saved prediction results in Power BI. However, for a real customer churn use-case, the platform user may have to do more thorough ideation of what visualizations to create, based on subject matter expertise, and what their firm and business analytics team has standardized as metrics.
 
-        ![Screenshot that shows a Power BI dashboard example.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/power-bi-dashboard.png)
+        ![](./images/29042025(39).png)
 
         The Power BI report shows that customers who use more than two of the bank products have a higher churn rate although few customers had more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle aged customers (between 25-45) and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutes. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
 
