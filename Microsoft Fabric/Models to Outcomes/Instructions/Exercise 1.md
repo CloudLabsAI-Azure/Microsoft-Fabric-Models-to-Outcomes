@@ -97,7 +97,7 @@ By the end of this lab, you’ll have a solid foundation for performing data sci
 
 Follow the steps below to continue with the exercise. In this section, you will run the cells in the notebook sequentially.
 
-### **Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
+### **Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell)**
 
 For machine learning model development or ad-hoc data analysis, you might need to quickly install a custom library for your Apache Spark session. You have two options to install libraries.
 
@@ -117,7 +117,7 @@ For machine learning model development or ad-hoc data analysis, you might need t
 
     ![](./images/29042025(13).png)
 
-### **Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
+### **Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell)**
 
 The dataset in _churn.csv_ contains the churn status of 10,000 customers, along with 14 attributes that include:
 
@@ -241,7 +241,7 @@ PythonCopy
 df = df.toPandas()
 ```
 
-### **Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
+### **Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell)**
 
 ### **Display raw data**
 
@@ -430,7 +430,7 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 - Inactive customers have a higher churn rate
 - Gender and tenure years have little impact on a customer's decision to close a bank account
 
-### **Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
+### **Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell)**
 
 With the data in place, you can now define the model. Apply random forest and LightGBM models in this notebook.
 
@@ -611,7 +611,7 @@ To view your experiments:
 
     ![](./images/29042025(24).png)
 
-### **Step 5: Evaluate and save the final machine learning model (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
+### **Step 5: Evaluate and save the final machine learning model (Ctrl + Enter or Press Run cell icon next to the cell)**
 
 Open the saved experiment from the workspace to select and save the best model:
 

@@ -102,10 +102,6 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(53).png)
 
-1. If a popup appears after connecting, choose **Keep setup** to proceed without making any changes to the existing configuration.
-
-    <img src=images/o91v8edm.jpg />
-
 5. You can build the reports manually and use Copilot to suggest and create them based on your selection. Just follow along with Copilot's instructions and responses.
 
     ![](./images/29042025(54).png)
@@ -130,73 +126,45 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
 1. Open the **Visual Studio Code** located on the desktop of your lab environment.
 
-1. **Configure VS Code for Data Science:**
+1. Navigate to the **Extensions** in VS Code and search for **Fabric Data Engineering - Remote** to install it.
 
-    - Launch **Synapse** extension, Click **Select Workspace** and select **Set** in the popup window to set a local work folder. 
+    ![](./images/29042025(55).png)
 
-        <img src=images/fc6fuu3m.jpg />
+1. Then, follow the sign-in Launch **Synapse** extension, Click **Select Workspace** and select **Set** in the popup window to set a local work folder. 
 
-    - Click **Sign in** from the popu up window.
+    ![](./images/29042025(57).png)
 
-        <img src=images/8d7q1um1.jpg />
+    >**Note:** Click **Sign in** from the popu up window.
 
-        If prompted, the sign-in process will occur in the browser window in the background. Please follow the sign-in steps as needed.
+    ![](./images/29042025(56).png)
 
-        <img src=images/kh4eg113.jpg />
+1. If prompted, the sign-in process will occur in the browser window in the background. Please follow the sign-in steps as needed.
+
+    ![](./images/29042025(58).png)
     
-    - Create a **New folder** named *FabricVSC* in the file explorer popup, and then **Select As Local Work Folder**.
+1. Create a **New folder** named **FabricVSC** in the file explorer popup, and then **Select As Local Work Folder**.
 
-        <img src=98u3w7m1.jpg](images/98u3w7m1.jpg />
-2. **Explore the Fabric Artifacts in the VS Code IDE:**
+    ![](./images/29042025(59).png)
 
-    - In VS Code, **Select Workspace** for the Synapse extension and choose the appropriate **ws-<inject key="Deployment ID" enableCopy="false"/>** from the dropdown menu.
+2. In VS Code, Select **Workspace** for the Synapse extension and choose the appropriate **ws-<inject key="Deployment ID" enableCopy="false"/>** from the dropdown menu.
 
-        <img src=images/jxjlexby.jpg />
+    ![](./images/29042025(60).png)
     
-    - Explore the Fabric Artifacts in your local VS Code IDE by **expanding the artifact types**.
+1. Explore the Fabric Artifacts in your local VS Code IDE by **expanding the artifact types**.
 
-        <img src=images/4d3q8qk3.jpg />
+    ![](./images/29042025(61).png)
     
-    - Launch the notebooks by clicking **Download**, then select **Open notebook folder**.
+1. Launch the notebooks by clicking **Download**, then select **Open notebook folder**.
 
-        <img src=images/a0fzxyz2.jpg />
+    ![](./images/29042025(62).png)
 
-        *You can modify the code and push it back to the **Fabric workspace** for execution, and run it locally if you have **local Kernels** available in VS Code. If you would like to access the **Fabric Spark Kernel**, complete the installation of the **Synapse-Remote** extension as described below in "**4. (Optional) Install and Execute notebook with Fabric/Spark using Synapse-Remote extension**"*.
+3. To View the lakehouse table go to Lakehouse -> by clicking **Preview table**.
 
-        <img src=images/xtp6qjgj.jpg />
-
-    - Launch **Microsoft Fabric** extension, Click **Sign in to Fabric** and select **Allow** in the popup window. 
-    <img src=8mlwwm34.jpg](images/8mlwwm34.jpg />
-
-    - **Pick an account** from the redirected browser window. If you're not signed in, please follow the **sign-in** process.
-
-        <img src=ictjkecf.jpg](images/ictjkecf.jpg />
-
-    - Switch back to the **VS Code** and Click **Select Fabric workspace**.
-
-        <img src=8j8u775f.jpg](images/8j8u775f.jpg />
-
-3. **Explore the Lakehouse data from VS Code:**
-
-    - View the lakehouse table by clicking **Preview table**.
-
-        <img src=images/svnm8fkc.jpg />
+    ![](./images/29042025(65).png)
     
-    - Download the file by clicking **Download** icon of respective file to local directory.
+1. Download the file by clicking **Download** icon of respective file to local directory.
 
-        <img src=images/zxht8rs7.jpg />
-
-4. **(Optional) Install and Execute notebook with Fabric/Spark Spark using Synaspe-Remote extension:**
-
-    - Navigate to the **Extensions** in VS Code and search for **Fabric Data Engineering - Remote** to install it. Then, follow the sign-in and workspace selection process as described in the previous one.
-
-        <img src=images/47mlxre8.jpg />
-
-    - Once connected to the workspace, you should be able to access the notebook. Click **Synapse Remote: Open Resource In Browser** and connect to Synapse Spark remote Kernels to execute the notebooks.
-
-        <img src=images/e5kvqifc.jpg />
-
-Exploring Fabric in the local VS Code IDE allows you to seamlessly manage and execute your data science projects with ease.
+    ![](./images/29042025(64).png)
 
 
 
