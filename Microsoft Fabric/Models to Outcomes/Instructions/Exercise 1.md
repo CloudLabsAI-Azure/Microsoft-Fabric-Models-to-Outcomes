@@ -1,4 +1,4 @@
-# Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 1
+# **Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 1**
 
 
 
@@ -397,8 +397,6 @@ df_clean["NewBalanceScore"] = pd.qcut(df_clean['Balance'].rank(method="first"), 
 df_clean["NewEstSalaryScore"] = pd.qcut(df_clean['EstimatedSalary'], 10, labels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#use-data-wrangler-to-perform-one-hot-encoding)
-
 ### **Use Data Wrangler to perform one-hot encoding**
 
 With the same steps to launch Data Wrangler, as discussed earlier, use the Data Wrangler to perform one-hot encoding. This cell shows the copied generated script for one-hot encoding:
@@ -586,7 +584,7 @@ with mlflow.start_run(run_name="rfc2_sm") as run:
     roc_auc_rfc2_sm = roc_auc_score(y_res, rfc2_sm.predict_proba(X_res)[:, 1])
 ```
 
-**Train the model with LightGBM:**
+Train the model with LightGBM:
 
 PythonCopy
 
@@ -697,7 +695,7 @@ def plot_confusion_matrix(cm, classes,
     plt.xlabel('Predicted label')
 ```
 
-**Create a confusion matrix for the random forest classifier, with a maximum depth of four, with four features:**
+Create a confusion matrix for the random forest classifier, with a maximum depth of four, with four features:
 
 PythonCopy
 
@@ -710,7 +708,7 @@ tn, fp, fn, tp = cfm.ravel()
 
 ![Screenshot that shows a notebook display of a confusion matrix for random forest with a maximum depth of four.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-random-forest-depth-4.jpg)
 
-**Create a confusion matrix for the random forest classifier with maximum depth of eight, with six features:**
+Create a confusion matrix for the random forest classifier with maximum depth of eight, with six features:
 
 PythonCopy
 
@@ -723,7 +721,7 @@ tn, fp, fn, tp = cfm.ravel()
 
 ![Screenshot that shows a notebook display of a confusion matrix for random forest with a maximum depth of eight.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-random-forest-depth-8.jpg)
 
-**Create a confusion matrix for LightGBM:**
+Create a confusion matrix for LightGBM:
 
 PythonCopy
 
