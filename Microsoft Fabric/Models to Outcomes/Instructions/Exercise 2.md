@@ -1,25 +1,16 @@
 # Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 2
 
 
+## Contents
+- Introduction
+    - Task 1: Setting Up and Exploring OneLake File Explorer
+    - Task 2: Creating Reports with Power BI Desktop and Copilot
+    - Task 3: Configuring VS Code for Microsoft Fabric Development
+- Summary
 
-# Exercise 2 - Client tools
+## Introduction:
 
-This lab consists of **five different sections**/exercises and here is an overview. You are currently in **Exercise 2 - Client Tools (Optional)** exercise.
-
-- **[Configure Workspace](#configure-workspace)**
-- **[Exercise 1 - Data Science in Fabric](#exercise-1---data-science-in-fabric-notebook-setup)**
-    - **[Part1 - Data Science in Fabric (Notebook Setup)](#exercise-1---data-science-in-fabric-notebook-setup)**
-    - **[Part2 - Data Science in Fabric (Continued)](#exercise-1---data-science-in-fabric-continued)**
-- **[Exercise 2 - Client Tools (Optional)](#exercise-2---client-tools)**
-- **[Exercise 3 - Copilot Data Science Experience (Optional)](#exercise-3---copilot-data-science-experience-enhanced-customer-churn-sample-with-copilot)**
-- **[Exercise 4 - Power BI Visualization + PBI Copilot (Optional)](#exercise-4---power-bi-visualization--pbi-copilot)**
-- **[Thank You Note and Feedback Request!](#feedback-your-feedback-is-valuable)**
-
-There are few client tools such as OneLake File Explorer, Power BI Desktop and VS Code for your ecxploration. 
-
-- [OneLake File Explorer](#onelake-file-explorer)
-- [Power BI Desktop](#power-bi-desktop)
-- [VS Code](#vs-code)
+In this lab, you will explore the core tools and capabilities of Microsoft Fabric, including OneLake File Explorer, Power BI Desktop, and Visual Studio Code (VS Code) with the Synapse extension. You will learn how to access and manage your OneLake data directly from Windows File Explorer, build and analyze reports using Copilot in Power BI, and configure VS Code to develop and interact with Fabric artifacts and Lakehouse data. This hands-on lab is designed to provide a foundational understanding of how these tools integrate to support end-to-end data science and analytics workflows within the Microsoft Fabric ecosystem.
 
 ## OneLake File Explorer:
 This application automatically syncs all Microsoft OneLake items that you have access to in Windows File Explorer. To log in to Microsoft OneLake File Explorer and explore its features.
@@ -159,7 +150,7 @@ Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power B
         *You can modify the code and push it back to the **Fabric workspace** for execution, and run it locally if you have **local Kernels** available in VS Code. If you would like to access the **Fabric Spark Kernel**, complete the installation of the **Synapse-Remote** extension as described below in "**4. (Optional) Install and Execute notebook with Fabric/Spark using Synapse-Remote extension**"*.
 
         <img src=images/xtp6qjgj.jpg />
-<!--
+
     - Launch **Microsoft Fabric** extension, Click **Sign in to Fabric** and select **Allow** in the popup window. 
     <img src=8mlwwm34.jpg](images/8mlwwm34.jpg />
 
@@ -170,8 +161,6 @@ Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power B
     - Switch back to the **VS Code** and Click **Select Fabric workspace**.
 
         <img src=8j8u775f.jpg](images/8j8u775f.jpg />
-
--->
 
 3. **Explore the Lakehouse data from VS Code:**
 
