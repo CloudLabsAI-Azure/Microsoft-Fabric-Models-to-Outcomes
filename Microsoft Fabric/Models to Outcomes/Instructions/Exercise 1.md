@@ -790,6 +790,4 @@ Access your saved table in Power BI:
 
 **Summary**
 
-In this notebook, we built a machine learning model to predict bank customer churn using Microsoft Fabric. We covered data loading, exploration, and preprocessing using Fabric's Data Wrangler. Models were developed using Scikit-Learn and LightGBM, with experiment tracking handled via MLflow. We evaluated model performance, saved the final model, and visualized results using Power BI—highlighting Microsoft Fabric’s end-to-end support for data science workflows.
-
-In this lab, you have explored the full data science lifecycle within Microsoft Fabric—from data ingestion and preprocessing to model training, evaluation, and reporting. This hands-on lab demonstrated how Fabric integrates various tools to streamline and scale the data science process efficiently.
+In this lab, you explored the end-to-end data science workflow using Microsoft Fabric to predict bank customer churn. You began by installing and setting up the required libraries, followed by data loading, exploration, and preprocessing using Data Wrangler. You then built and evaluated machine learning models using Scikit-learn and LightGBM, and tracked your experiments with MLflow. Finally, you visualized model results in Power BI, demonstrating how Microsoft Fabric supports each stage of a modern data science project—from data preparation to insight generation.
