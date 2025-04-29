@@ -1356,19 +1356,4 @@ Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power B
 
 **Congratulations** on successfully completing all the lab exercises! We hope you enjoyed the experience. Please feel free to share your feedback. We look forward to seeing you again soon.
 
-===
 
-# Feedback (Your feedback is valuable) 
-
-###**Thank you for taking the time to complete this lab!!** 
-
-<!-- ### End User Licensing Agreement
-
-By using this lab solution, you agree to the terms outlined in the End User License Agreement (EULA), which you can review by following this ^[link][Reference Link].
-
-> [Reference Link]:
-> !instructions[](https://raw.githubusercontent.com/LODSContent/SkillableLabSolutions/main/EULA%20062424.md) -->
-
-</br>
-
-**[Back to Home](#configure-workspace)**
