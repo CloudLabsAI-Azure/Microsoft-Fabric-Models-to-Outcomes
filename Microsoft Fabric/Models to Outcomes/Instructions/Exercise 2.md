@@ -58,7 +58,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![alt text](image-6.png)
+     ![](./images/29042025(47).png)
   
 3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
@@ -82,40 +82,37 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
 1. Click the **File** menu to create a **Blank report** if one is not automatically created for you.
 
-    <img src=images/gorz8fm7.jpg />
+    ![](./images/29042025(48).png)
 
-3. **Explore Copilot with Power BI Desktop:**
-   - Click on **Copilot** under the **Home menu** to select the **Workspace** and activate Copilot (**Note**: Copilot works only with **F64 and above SKUs** + Power BI license Pro/PPU/Trial for authoring).
+1. Click on **Copilot** under the **Home** menu, then select the workspace **ws-<inject key="Deployment ID" enableCopy="false"/>** and click **OK**.
 
-    <img src=images/2f3yvrp8.jpg />
+     ![](./images/29042025(50).png)
 
-4. **Connect to the Semantic model:**
+1. Navigate to the **Home menu**, click **Get Data**, and select **More...** to connect data from multiple sources.
 
-    - Navigate to the **Home menu**, click **Get Data**, and select **More...** to connect data from multiple sources.
+      ![](./images/29042025(51).png)
 
-    <img src=images/94mvesxr.jpg />
+1. In the pop-up window, click **Microsoft Fabric** to choose the respective data stores. For this exercise, use **Power BI semantic models** and click **Connect**.
 
-    - In the pop-up window, click **Microsoft Fabric** to choose the respective data stores. For this exercise, use **Power BI semantic models** and click **Connect**.
+    ![](./images/29042025(52).png)
 
-    <img src=images/16goudmr.jpg />
+1. In the **OneLake catalog** window, locate and select **ChurnDS** from the list of available semantic models.  
 
-    - Select the **Power BI semantic model** you want to connect with from the list if you have more than one, create visuals, and then click **Connect** in the Semantic model selection window.
+1. After selecting **ChurnDS**, click the **Connect** button in the bottom-right corner of the window to proceed.
 
-    <img src=images/njh6jcdb.jpg />
+    ![](./images/29042025(53).png)
 
-    - (Only if it appears) Choose **Keep setup** in the popup.
+1. If a popup appears after connecting, choose **Keep setup** to proceed without making any changes to the existing configuration.
 
     <img src=images/o91v8edm.jpg />
 
-5. **Build a report using Copilot:**
+5. You can build the reports manually and use Copilot to suggest and create them based on your selection. Just follow along with Copilot's instructions and responses.
 
-    - You can build the reports manually and use Copilot to suggest and create them based on your selection. Just follow along with Copilot's instructions and responses.
-
-    <img src=images/m2lzaut4.jpg />
+    ![](./images/29042025(54).png)
 
     - Ask Copilot to Suggest content for a new report page.
     
-        ***##Copilot Prompt or Press Respective Suggestions:***
+        ***## Copilot Prompt or Press Respective Suggestions:***
 
         ```
         Suggest content for a new report page
@@ -123,15 +120,15 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     - Ask Copilot to create a report from the selection with your enhanced prompt.
 
-        ***##Copilot Prompt or Press Create from the suggestions:***
+        ***## Copilot Prompt or Press Create from the suggestions:***
 
         ```
         Create a page to examine the age distribution of customers.
         ```
 
-Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power BI Desktop**.
+## Task 3: Configuring VS Code for Microsoft Fabric Development
 
-## VS Code
+1. Open the **Visual Studio Code** located on the desktop of your lab environment.
 
 1. **Configure VS Code for Data Science:**
 
@@ -152,7 +149,7 @@ Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power B
         <img src=98u3w7m1.jpg](images/98u3w7m1.jpg />
 2. **Explore the Fabric Artifacts in the VS Code IDE:**
 
-    - In VS Code, **Select Workspace** for the Synapse extension and choose the appropriate **ws-models2outcomes-##** from the dropdown menu.
+    - In VS Code, **Select Workspace** for the Synapse extension and choose the appropriate **ws-<inject key="Deployment ID" enableCopy="false"/>** from the dropdown menu.
 
         <img src=images/jxjlexby.jpg />
     
