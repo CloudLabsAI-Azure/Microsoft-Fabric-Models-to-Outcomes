@@ -158,14 +158,20 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(62).png)
 
-3. To View the lakehouse table go to Lakehouse -> by clicking **Preview table**.
+3. To view the lakehouse table, navigate to **Lakehouse -> CustomersLH -> Tables -> df_pred_results**, then click on **Preview table**.
 
     ![](./images/29042025(65).png)
     
-1. Download the file by clicking **Download** icon of respective file to local directory.
+1. To download the churn file, navigate to **Files -> churn -> raw -> churn.csv**, then click the **Download** icon next to the file to save it to your local directory.
 
     ![](./images/29042025(64).png)
 
 
+## Summary:
 
+In this lab, you have explored the fundamental tools and features of Microsoft Fabric, including OneLake File Explorer, Power BI Desktop, and Visual Studio Code with the Synapse extension. You accessed and managed OneLake data through Windows File Explorer, built and analyzed reports using Copilot in Power BI, and configured VS Code to interact with Fabric artifacts and Lakehouse data. This lab provided a hands-on introduction to how these tools work together to enable end-to-end data science and analytics workflows within the Microsoft Fabric ecosystem.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+![alt text](image-7.png)
 

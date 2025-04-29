@@ -788,6 +788,10 @@ Access your saved table in Power BI:
         print(f"Full run cost {int(time.time() - ts)} seconds.")
         ```
 
-**Summary**
+## Summary
 
 In this lab, you explored the end-to-end data science workflow using Microsoft Fabric to predict bank customer churn. You began by installing and setting up the required libraries, followed by data loading, exploration, and preprocessing using Data Wrangler. You then built and evaluated machine learning models using Scikit-learn and LightGBM, and tracked your experiments with MLflow. Finally, you visualized model results in Power BI, demonstrating how Microsoft Fabric supports each stage of a modern data science project—from data preparation to insight generation.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+![alt text](image-8.png)
