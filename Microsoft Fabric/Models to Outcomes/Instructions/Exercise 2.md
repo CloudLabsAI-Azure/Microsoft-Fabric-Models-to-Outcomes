@@ -149,7 +149,9 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 2. In VS Code, Select **Workspace** for the Synapse extension and choose the appropriate **ws-<inject key="Deployment ID" enableCopy="false"/>** from the dropdown menu.
 
     ![](./images/29042025(60).png)
-    
+
+1. When prompted with the **"Do you trust the authors of the files in this folder?"** message, check the box labeled **Trust the authors of all files in the parent folder**. Click the **"Yes, I trust the authors"** button to enable all features and exit restricted mode in Visual Studio Code.
+   
 1. Explore the Fabric Artifacts in your local VS Code IDE by **expanding the artifact types**.
 
     ![](./images/29042025(61).png)
@@ -165,7 +167,6 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 1. To download the churn file, navigate to **Files -> churn -> raw -> churn.csv**, then click the **Download** icon next to the file to save it to your local directory.
 
     ![](./images/29042025(64).png)
-
 
 ## Summary:
 
