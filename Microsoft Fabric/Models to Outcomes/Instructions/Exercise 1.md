@@ -1,8 +1,5 @@
 # **Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 1**
 
-
-
-
 ## Contents
 
 - Introduction
@@ -14,7 +11,7 @@
 
 ## Introduction
 
-In this lab, you will begin an end-to-end Data Science workflow using Microsoft Fabric. The goal is to build a predictive model that determines whether bank customers are likely to churn i.e., stop doing business with the bank. You'll walk through each phase of the workflow, from installing necessary libraries to training machine learning models and visualizing results in Power BI.
+In this lab, you will begin an end-to-end Data Science workflow using Microsoft Fabric. The goal is to build a predictive model that determines whether bank customers are likely to churn, i.e., stop doing business with the bank. You'll walk through each phase of the workflow, from installing necessary libraries to training machine learning models and visualizing results in Power BI.
 
 By the end of this lab, you’ll have a solid foundation for performing data science tasks in Microsoft Fabric, using tools like Data Wrangler, scikit-learn, LightGBM, MLflow, and built-in visualization features.
 
@@ -104,7 +101,7 @@ Follow the steps below to continue with the exercise. In this section, you will 
 
 For machine learning model development or ad-hoc data analysis, you might need to quickly install a custom library for your Apache Spark session. You have two options to install libraries.
 
-- Use the inline installation capabilities (`%pip` or `%conda`) of your notebook to install a library, in your current notebook only.
+- Use the inline installation capabilities (`%pip` or `%conda`) of your notebook to install a library, but only in your current notebook.
 - Alternatively, you can create a Fabric environment, install libraries from public sources or upload custom libraries to it, and then your workspace admin can attach the environment as the default for the workspace. All the libraries in the environment will then become available for use in any notebooks and Spark job definitions in the workspace. For more information on environments, see [create, configure, and use an environment in Microsoft Fabric](https://aka.ms/fabric/create-environment).
 
     For this tutorial, use `%pip install` to install the `imblearn` library in your notebook.
@@ -154,7 +151,7 @@ Expand table
 
 ### **Download the dataset and upload to the lakehouse**
 
-Define these parameters, so that you can use this notebook with different datasets:
+Define these parameters so that you can use this notebook with different datasets:
 
 PythonCopy
 
@@ -507,7 +504,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 
 Imbalanced classification has a problem, because it has too few examples of the minority class for a model to effectively learn the decision boundary. To handle this, Synthetic Minority Oversampling Technique (SMOTE) is the most widely used technique to synthesize new samples for the minority class. Access SMOTE with the `imblearn` library that you installed in step 1.
 
-Apply SMOTE only to the training dataset. You must leave the test dataset in its original imbalanced distribution, to get a valid approximation of model performance on the original data. This experiment represents the situation in production.
+Apply SMOTE only to the training dataset. You must leave the test dataset in its original imbalanced distribution to get a valid approximation of model performance on the original data. This experiment represents the situation in production.
 
 PythonCopy
 
@@ -606,11 +603,11 @@ To view your experiments:
 
     ![](./images/29042025(22).png)
 
-3. Compare run details in a list view. Click **View run list** under **Compare runs** to Select certain runs to visually compare run metrics. 
+3. Compare run details in a list view. Click **View run list** under **Compare runs** to select certain runs to visually compare run metrics. 
 
     ![](./images/29042025(23).png)
 
-4. Select all runs under **Run list** menu.
+4. Select all runs under the **Run list** menu.
 
     ![](./images/29042025(24).png)
 
@@ -748,9 +745,12 @@ Access your saved table in Power BI:
 
     ![](./images/29042025(27).png)
 
-5. In the ribbon, click **New semantic model**.  
+5. In the ribbon, click **New semantic model**.
+
    - Under `dbo > Tables`, check the box for **`df_pred_results`**.  
+
    - Enter **ChurnDS** as the name for the semantic model.  
+
    - Click **Confirm** to create the Power BI semantic model linked to the prediction results.
 
      ![](./images/29042025(28).png)
@@ -758,7 +758,9 @@ Access your saved table in Power BI:
      ![](./images/29042025(29).png)
 
 7. Return to the **Workspace** and locate the **Semantic model** you created.  
+
    - Click the **more options (...)** next to it, then select **Create report**.  
+
    - This action will open the Power BI report **authoring page**, where you can begin designing your report.
 
      ![](./images/29042025(19).png)
@@ -777,7 +779,7 @@ Access your saved table in Power BI:
 
         ![](./images/29042025(39).png)
 
-        The Power BI report shows that customers who use more than two of the bank products have a higher churn rate although few customers had more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle aged customers (between 25-45) and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutes. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
+        The Power BI report shows that customers who use more than two of the bank products have a higher churn rate although few customers had more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle aged customers (between 25-45) and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutions. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
 
         PythonCopy
 
@@ -786,6 +788,8 @@ Access your saved table in Power BI:
         print(f"Full run cost {int(time.time() - ts)} seconds.")
         ```
 
-## Summary
+**Summary**
 
-In this notebook, we built a machine learning model to predict bank customer churn using Microsoft Fabric. We covered data loading, exploration, and processing with Fabric's Data Wrangler. We trained models with Scikit-Learn and LightGBM, tracked experiments with MLflow, and evaluated the model. Finally, we saved the model and visualized its performance using Power BI, showcasing the end-to-end capabilities of Microsoft Fabric in a data science workflow.
+In this notebook, we built a machine learning model to predict bank customer churn using Microsoft Fabric. We covered data loading, exploration, and preprocessing using Fabric's Data Wrangler. Models were developed using Scikit-Learn and LightGBM, with experiment tracking handled via MLflow. We evaluated model performance, saved the final model, and visualized results using Power BI—highlighting Microsoft Fabric’s end-to-end support for data science workflows.
+
+In this lab, you have explored the full data science lifecycle within Microsoft Fabric—from data ingestion and preprocessing to model training, evaluation, and reporting. This hands-on lab demonstrated how Fabric integrates various tools to streamline and scale the data science process efficiently.
