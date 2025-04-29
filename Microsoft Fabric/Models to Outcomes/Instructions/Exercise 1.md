@@ -98,7 +98,7 @@ By the end of this lab, you’ll have a solid foundation for performing data sci
 
 ## Task 2.2 - Data Science in Fabric (Continued)
 
-### Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)
+### **Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
 
 For machine learning model development or ad-hoc data analysis, you might need to quickly install a custom library for your Apache Spark session. You have two options to install libraries.
 
@@ -118,7 +118,7 @@ For machine learning model development or ad-hoc data analysis, you might need t
 
     ![](./images/29042025(13).png)
 
-### Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)
+### **Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
 
 The dataset in _churn.csv_ contains the churn status of 10,000 customers, along with 14 attributes that include:
 
@@ -150,7 +150,7 @@ Expand table
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#download-the-dataset-and-upload-to-the-lakehouse)
 
-### Download the dataset and upload to the lakehouse
+### **Download the dataset and upload to the lakehouse**
 
 Define these parameters, so that you can use this notebook with different datasets:
 
@@ -207,7 +207,7 @@ ts = time.time()
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#read-raw-data-from-the-lakehouse)
 
-### Read raw data from the lakehouse
+### **Read raw data from the lakehouse**
 
 Explore the downloaded raw data in Lakehouse under **Files -> churn -> raw -> churn.csv** 
 
@@ -232,7 +232,7 @@ df = (
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#create-a-pandas-dataframe-from-the-dataset)
 
-### Create a pandas DataFrame from the dataset
+### **Create a pandas DataFrame from the dataset**
 
 This code converts the Spark DataFrame to a pandas DataFrame, for easier processing and visualization:
 
@@ -242,13 +242,9 @@ PythonCopy
 df = df.toPandas()
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-3-perform-exploratory-data-analysis)
+### **Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
 
-### Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
-
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#display-raw-data)
-
-### Display raw data
+### **Display raw data**
 
 Explore the raw data with `display`, calculate some basic statistics, and show chart views. You must first import the required libraries for data visualization - for example, [seaborn](https://seaborn.pydata.org/). Seaborn is a Python data visualization library, and it provides a high-level interface to build visuals on dataframes and arrays.
 
@@ -271,9 +267,7 @@ PythonCopy
 display(df, summary=True)
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#use-data-wrangler-to-perform-initial-data-cleaning)
-
-### Use Data Wrangler to perform initial data cleaning
+### **Use Data Wrangler to perform initial data cleaning**
 
 Launch Data Wrangler directly from the notebook to explore and transform pandas dataframes. At the notebook ribbon **Home** tab *(Data Wrangler is on the right of the Run all button)*, use the Data Wrangler dropdown prompt to browse the activated pandas DataFrames available for editing. Select the DataFrame you want to open in Data Wrangler.
  
@@ -303,7 +297,7 @@ def clean_data(df):
 df_clean = clean_data(df.copy())
 ```
 
-### Determine attributes
+### **Determine attributes**
 
 This code determines the categorical, numerical, and target attributes:
 
@@ -324,9 +318,7 @@ numeric_variables = [col for col in df_clean.columns if df_clean[col].dtype != "
 print(numeric_variables)
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#show-the-five-number-summary)
-
-### Show the five-number summary
+### **Show the five-number summary**
 
 Use box plots to show the five-number summary
 
@@ -353,9 +345,7 @@ fig.delaxes(axes[1,2])
 
 ![Screenshot that shows a notebook display of the box plot for numerical attributes.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/box-plots.jpg)
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#show-the-distribution-of-exited-and-non-exited-customers)
-
-### Show the distribution of exited and non-exited customers
+### **Show the distribution of exited and non-exited customers**
 
 Show the distribution of exited versus non-exited customers, across the categorical attributes:
 
@@ -371,9 +361,7 @@ fig.subplots_adjust(hspace=0.7)
 
 ![Screenshot that shows a notebook display of the distribution of exited versus non-exited customers.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/bar-charts.jpg)
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#show-the-distribution-of-numerical-attributes)
-
-### Show the distribution of numerical attributes
+### **Show the distribution of numerical attributes**
 
 Use a histogram to show the frequency distribution of numerical attributes:
 
@@ -395,9 +383,7 @@ plt.show()
 
 ![Screenshot that shows a notebook display of numerical attributes.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/numerical-attributes.jpg)
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#perform-feature-engineering)
-
-### Perform feature engineering
+### **Perform feature engineering**
 
 This feature engineering generates new attributes based on the current attributes:
 
@@ -413,7 +399,7 @@ df_clean["NewEstSalaryScore"] = pd.qcut(df_clean['EstimatedSalary'], 10, labels 
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#use-data-wrangler-to-perform-one-hot-encoding)
 
-### Use Data Wrangler to perform one-hot encoding
+### **Use Data Wrangler to perform one-hot encoding**
 
 With the same steps to launch Data Wrangler, as discussed earlier, use the Data Wrangler to perform one-hot encoding. This cell shows the copied generated script for one-hot encoding:
 
@@ -440,7 +426,7 @@ df_clean.head()
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#create-a-delta-table-to-generate-the-power-bi-report)
 
-### Create a delta table to generate the Power BI report
+### **Create a delta table to generate the Power BI report**
 
 PythonCopy
 
@@ -452,9 +438,7 @@ sparkDF.write.mode("overwrite").format("delta").save(f"Tables/{table_name}")
 print(f"Spark DataFrame saved to delta table: {table_name}")
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#summary-of-observations-from-the-exploratory-data-analysis)
-
-### Summary of observations from the exploratory data analysis
+### **Summary of observations from the exploratory data analysis**
 
 - Most of the customers are from France. Spain has the lowest churn rate, compared to France and Germany.
 - Most customers have credit cards
@@ -463,9 +447,7 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 - Inactive customers have a higher churn rate
 - Gender and tenure years have little impact on a customer's decision to close a bank account
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-4-perform-model-training-and-tracking)
-
-## Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
+### **Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
 
 With the data in place, you can now define the model. Apply random forest and LightGBM models in this notebook.
 
@@ -482,7 +464,7 @@ df_clean = spark.read.format("delta").load("Tables/df_clean").toPandas()
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#generate-an-experiment-for-tracking-and-logging-the-models-by-using-mlflow)
 
-### Generate an experiment for tracking and logging the models by using MLflow
+### **Generate an experiment for tracking and logging the models by using MLflow**
 
 This section shows how to generate an experiment, and it specifies the model and training parameters and the scoring metrics. Additionally, it shows how to train the models, log them, and save the trained models for later use.
 
@@ -505,7 +487,7 @@ All the experiments with their respective names are logged, and you can track th
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#set-experiment-and-autologging-specifications)
 
-### Set experiment and autologging specifications
+### **Set experiment and autologging specifications**
 
 PythonCopy
 
@@ -516,7 +498,7 @@ mlflow.autolog(exclusive=False)
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#import-scikit-learn-and-lightgbm)
 
-### Import scikit-learn and LightGBM
+### **Import scikit-learn and LightGBM**
 
 PythonCopy
 
@@ -530,7 +512,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, confusion
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#prepare-training-and-test-datasets)
 
-### Prepare training and test datasets
+### **Prepare training and test datasets**
 
 PythonCopy
 
@@ -543,7 +525,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#apply-smote-to-the-training-data)
 
-### Apply SMOTE to the training data
+### **Apply SMOTE to the training data**
 
 Imbalanced classification has a problem, because it has too few examples of the minority class for a model to effectively learn the decision boundary. To handle this, Synthetic Minority Oversampling Technique (SMOTE) is the most widely used technique to synthesize new samples for the minority class. Access SMOTE with the `imblearn` library that you installed in step 1.
 
@@ -564,7 +546,7 @@ For more information, see [SMOTE](https://imbalanced-learn.org/stable/reference
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#train-the-model)
 
-### Train the model
+### **Train the model**
 
 Use Random Forest to train the model, with a maximum depth of four, and with four features:
 
@@ -604,7 +586,7 @@ with mlflow.start_run(run_name="rfc2_sm") as run:
     roc_auc_rfc2_sm = roc_auc_score(y_res, rfc2_sm.predict_proba(X_res)[:, 1])
 ```
 
-Train the model with LightGBM:
+**Train the model with LightGBM:**
 
 PythonCopy
 
@@ -632,7 +614,7 @@ with mlflow.start_run(run_name="lgbm_sm") as run:
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#view-the-experiment-artifact-to-track-model-performance)
 
-### View the experiment artifact to track model performance
+### **View the experiment artifact to track model performance**
 
 The experiment runs are automatically saved in the experiment artifact. You can find that artifact in the workspace. An artifact name is based on the name used to set the experiment. All of the trained models, their runs, performance metrics and model parameters are logged on the experiment page.
 
@@ -654,7 +636,7 @@ To view your experiments:
 
 <img src=images/0756z1nk.jpg />
 
-## Step 5: Evaluate and save the final machine learning model (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
+## **Step 5: Evaluate and save the final machine learning model (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)**
 
 Open the saved experiment from the workspace to select and save the best model:
 
@@ -670,7 +652,7 @@ load_model_lgbm1_sm = mlflow.lightgbm.load_model(f"runs:/{lgbm1_sm_run_id}/model
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#assess-the-performance-of-the-saved-models-on-the-test-dataset)
 
-### Assess the performance of the saved models on the test dataset
+### **Assess the performance of the saved models on the test dataset**
 
 PythonCopy
 
@@ -682,7 +664,7 @@ ypred_lgbm1_sm = load_model_lgbm1_sm.predict(X_test) # LightGBM
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#show-truefalse-positivesnegatives-by-using-a-confusion-matrix)
 
-### Show true/false positives/negatives by using a confusion matrix
+### **Show true/false positives/negatives by using a confusion matrix**
 
 To evaluate the accuracy of the classification, build a script that plots the confusion matrix. You can also plot a confusion matrix using SynapseML tools, as shown in the [Fraud Detection sample](https://aka.ms/samples/frauddectection).
 
@@ -715,7 +697,7 @@ def plot_confusion_matrix(cm, classes,
     plt.xlabel('Predicted label')
 ```
 
-Create a confusion matrix for the random forest classifier, with a maximum depth of four, with four features:
+**Create a confusion matrix for the random forest classifier, with a maximum depth of four, with four features:**
 
 PythonCopy
 
@@ -728,7 +710,7 @@ tn, fp, fn, tp = cfm.ravel()
 
 ![Screenshot that shows a notebook display of a confusion matrix for random forest with a maximum depth of four.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-random-forest-depth-4.jpg)
 
-Create a confusion matrix for the random forest classifier with maximum depth of eight, with six features:
+**Create a confusion matrix for the random forest classifier with maximum depth of eight, with six features:**
 
 PythonCopy
 
@@ -741,7 +723,7 @@ tn, fp, fn, tp = cfm.ravel()
 
 ![Screenshot that shows a notebook display of a confusion matrix for random forest with a maximum depth of eight.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-random-forest-depth-8.jpg)
 
-Create a confusion matrix for LightGBM:
+**Create a confusion matrix for LightGBM:**
 
 PythonCopy
 
@@ -754,9 +736,7 @@ tn, fp, fn, tp = cfm.ravel()
 
 ![Screenshot that shows a notebook display of a confusion matrix for LightGBM.](https://learn.microsoft.com/en-us/fabric/data-science/media/tutorial-bank-churn/confusion-lgbm.jpg)
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#save-results-for-power-bi)
-
-### Save results for Power BI
+### **Save results for Power BI**
 
 Save the delta frame to the lakehouse, to move the model prediction results to a Power BI visualization.
 
@@ -774,9 +754,7 @@ sparkDF.write.mode("overwrite").format("delta").option("overwriteSchema", "true"
 print(f"Spark DataFrame saved to delta table: {table_name}")
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-6-access-visualizations-in-power-bi)
-
-## Step 6: Access visualizations in Power BI
+## **Step 6: Access visualizations in Power BI**
 
 **Note**: If you are encountering error **Cannot load model** it might be the chance that the **Power BI Pro/PPU/Trial** license is not activated for the user. Recheck whether you have activate the trail to get Power BI authering experience. This was covered in the **Configure Workspace** earlier section under **Step 2** (9. Click on User Profile in the top right corner, then select Free trial from the user profile menu, and finally click Activate in the popup window).
 
@@ -855,17 +833,16 @@ PythonCopy
 print(f"Full run cost {int(time.time() - ts)} seconds.")
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#related-content)
-
-**Congratulations**, you have successfully completed **Exercise 1 - Data Science in Fabric**!
-
 ## Related content
 
 - [Machine learning model in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/machine-learning-model)
 - [Train machine learning models](https://learn.microsoft.com/en-us/fabric/data-science/model-training-overview)
 - [Machine learning experiments in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/machine-learning-experiment)
 
-===
+## Summary
+
+
+
 # Exercise 2 - Client tools
 
 This lab consists of **five different sections**/exercises and here is an overview. You are currently in **Exercise 2 - Client Tools (Optional)** exercise.
