@@ -10,7 +10,7 @@
 - Task 2 - Data Science in Fabric
     - Task 2.1 - Data Science in Fabric (Notebook Setup)
     - Task 2.2 - Data Science in Fabric (Continued)
-
+- Summary
 
 ## Introduction
 
@@ -58,9 +58,9 @@ By the end of this lab, you’ll have a solid foundation for performing data sci
 
     <img src=images/7p2lxw7o.jpg />
     
-5. For the **Semantic model storage format**, select **Large Semantic model storage format**, then click **Apply**.
+5. For the **Semantic model storage format**, select **Large Semantic model storage format**, then click **Apply**. 
 
-    > **Note:** Power BI semantic models use a highly compressed in-memory cache to deliver fast query performance and responsive user interaction. In Premium capacities, you can go beyond the default size limits by enabling the **Large semantic model storage format**. When this setting is enabled, the model size is governed by the Premium capacity or any maximum size defined by the administrator.
+    > **Note:** Enabling the **Large semantic model storage format** in Premium capacities allows semantic models to exceed default size limits, with the maximum size determined by the capacity or admin settings.
 
 ## Task 2:  Data Science in Fabric (Notebook Setup)
 
@@ -103,9 +103,6 @@ To open the manual's built-in sample notebook in the Data Science experience:
 
     <img src=images/jlybvgt3.jpg />
 
-- [ ]  Tick this box to indicate the successful import of the sample notebook and completion of lakehouse creation.
-
-===
 
 # Exercise 1 - Data Science in Fabric (Continued)
 
