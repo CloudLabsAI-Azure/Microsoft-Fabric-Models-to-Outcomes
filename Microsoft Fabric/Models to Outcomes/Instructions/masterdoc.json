@@ -6,7 +6,11 @@
         {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-Fabric-Models-to-Outcomes/refs/heads/main/Microsoft%20Fabric/Models%20to%20Outcomes/Instructions/Exercise%201.md",
           "Order": 1
-        }
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-Fabric-Models-to-Outcomes/refs/heads/main/Microsoft%20Fabric/Models%20to%20Outcomes/Instructions/Exercise%202.md",
+          "Order": 2
+        } 
       ]
     }
 ]
