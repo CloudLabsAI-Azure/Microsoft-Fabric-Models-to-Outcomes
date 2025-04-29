@@ -18,7 +18,7 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
 
 By the end of this lab, you’ll have a solid foundation for performing data science tasks in Microsoft Fabric, using tools like Data Wrangler, scikit-learn, LightGBM, MLflow, and built-in visualization features.
 
-<img src=images/5wt984t4.jpg />
+![](./images/29042025(11).png)
 
 ## Task 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
 
@@ -44,111 +44,82 @@ By the end of this lab, you’ll have a solid foundation for performing data sci
 
 1. On the **Microsoft Fabric Home** page, click **+ New workspace** to create a new workspace.
 
-    <img src=images/oihiw0yi.jpg />
+    ![](./images/29042025(1).png)
 
-    > **Note:** If a task flows preview feature notification appears, click **Got it** to proceed. 
+3. Enter the workspace name as **ws-<inject key="Deployment ID" enableCopy="false"/>**, then click or expand **Advanced** to assign the license mode for the Fabric workload.
 
-    <img src=images/f16yvpx9.jpg />
-
-3. Enter the workspace name **ws-<inject key="Deployment ID" enableCopy="false"/>*** and click/expand **Advanced** to assign the license mode for Fabric workload.
-
-    <img src=images/guxmyzhx.jpg />
+    ![](./images/29042025(2).png)
 
 4. Choose **Fabric capacity** and select the available Capacity from the dropdown list. If no Fabric Capacity license is available.
-
-    <img src=images/7p2lxw7o.jpg />
     
 5. For the **Semantic model storage format**, select **Large Semantic model storage format**, then click **Apply**. 
 
     > **Note:** Enabling the **Large semantic model storage format** in Premium capacities allows semantic models to exceed default size limits, with the maximum size determined by the capacity or admin settings.
 
-## Task 2:  Data Science in Fabric (Notebook Setup)
+    ![](./images/29042025(3).png)
 
+    > **Note:** If a task flows preview feature notification appears, click **Got it** to proceed. 
 
-### Open the built-in notebook
+    ![](./images/29042025(4).png)
 
-The sample **Customer churn** notebook accompanies this lab manual.
+## Task 2 - Data Science in Fabric
 
-To open the manual's built-in sample notebook in the Data Science experience:
+## Task 2.1 - Data Science in Fabric (Notebook Setup)
 
 1. Click **Workloads** in the left navigation menu and select **Data Science**.
 
-    <img src=images/l8a9mlo3.jpg />
+    ![](./images/29042025(5).png)
 
 2. Select **Explore a Sample**.
     
-    <img src=images/e3f6plyh.jpg />
+    ![](./images/29042025(6).png)
 
 3. Select the **Customer churn** sample, from the default **End-to-end workflows (Python)** tab.
 
-    <img src=images/d15m9004.jpg />
+    ![](./images/29042025(7).png)
     
 4. After successful creation of sample notebook, you may explore the tour by clicking **Show me** or **Skip tour**.
 
-    <img src=images/fb1dw2t5.jpg />
+    ![](./images/29042025(8).png)
 
-5. [Attach a lakehouse to the notebook](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-data-science-prepare-system#attach-a-lakehouse-to-the-notebooks) before you start running code. Click **Data sources** and Select the option **Lakehouses** in the popup menu within the sample notebook. 
+5. In the **Explorer** pane, under the **Data items** tab, click **Add data items**. From the dropdown menu, select **New lakehouse**.
 
-    <img src=images/76wv6e23.jpg />
+    ![](./images/29042025(9).png)
 
-6. In the **Add Lakehouse** popup, select **New Lakehouse** and click **Add**.
+7. Enter **CustomersLH** as the name for the **New lakehouse**, then click **Create**.
 
-    <img src=images/nx5yibf9.jpg />
+    > **Note:** You do not need to select the **Lakehouse Schemas (Public Preview)** checkbox.
 
-7. Enter the **New lakehouse** name as **CustomersLH** or a name of your choice and click **Create** (no need to select Lakehouse Schemas checkbox (Public Preview)).
-
-    <img src=images/4mkel884.jpg />
+    ![](./images/29042025(10).png)
 
 8. Now, your sample notebook is ready for execution.
 
-    <img src=images/jlybvgt3.jpg />
+    ![](./images/29042025(12).png)
+
+## Task 2.2 - Data Science in Fabric (Continued)
 
 
-# Exercise 1 - Data Science in Fabric (Continued)
-
-This lab consists of **five different sections**/exercises and here is an overview. You are currently in **Exercise 1: Part2 - Data Science in Fabric (Continued)** exercise.
-
-- **[Configure Workspace](#configure-workspace)**
-- **[Exercise 1 - Data Science in Fabric](#exercise-1---data-science-in-fabric-notebook-setup)**
-    - **[Part1 - Data Science in Fabric (Notebook Setup)](#exercise-1---data-science-in-fabric-notebook-setup)**
-    - **[Part2 - Data Science in Fabric (Continued)](#exercise-1---data-science-in-fabric-continued)**
-- **[Exercise 2 - Client Tools (Optional)](##exercise-2---client-tools)**
-- **[Exercise 3 - Copilot Data Science Experience (Optional)](##exercise-3---copilot-data-science-experience-enhanced-customer-churn-sample-with-copilot)**
-- **[Exercise 4 - Power BI Visualization + PBI Copilot (Optional)](##exercise-4---power-bi-visualization--pbi-copilot)**
-- **[Thank You Note and Feedback Request!](#feedback-your-feedback-is-valuable)**
-
-Let's dive into this exercise step by step to discover what **Fabric offers in terms of Data Science capabilities**, including **Notebook**, **Experiment**, **ML model**, and more.
-
-<img src=images/dd3u2buf.jpg />
-
-💡***Quick Tip*!**💡</br>
-***After completing** **Exercise 1 - Data Science in Fabric (Notebook Setup)**, you can click "**Run All**" ▶️ under **Home** menu to **execute all cells and preview the notebook results** before going through the step-by-step walkthrough. This helps you get an overview of the final outputs and can make troubleshooting easier.*
-
-## Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
+### Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)
 
 For machine learning model development or ad-hoc data analysis, you might need to quickly install a custom library for your Apache Spark session. You have two options to install libraries.
 
 - Use the inline installation capabilities (`%pip` or `%conda`) of your notebook to install a library, in your current notebook only.
 - Alternatively, you can create a Fabric environment, install libraries from public sources or upload custom libraries to it, and then your workspace admin can attach the environment as the default for the workspace. All the libraries in the environment will then become available for use in any notebooks and Spark job definitions in the workspace. For more information on environments, see [create, configure, and use an environment in Microsoft Fabric](https://aka.ms/fabric/create-environment).
 
-For this tutorial, use `%pip install` to install the `imblearn` library in your notebook.
+    For this tutorial, use `%pip install` to install the `imblearn` library in your notebook.
 
- Note
+     Note: The PySpark kernel restarts after `%pip install` runs. Install the needed libraries before you run any other cells.
 
-The PySpark kernel restarts after `%pip install` runs. Install the needed libraries before you run any other cells.
+    PythonCopy
 
-PythonCopy
+    ```
+    # Use pip to install libraries
+    %pip install imblearn
+    ```
 
-```
-# Use pip to install libraries
-%pip install imblearn
-```
+[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-2-load-the-data) 
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-2-load-the-data)
-
-- [ ]  Tick this box to indicate Step 1 is complete. 
-
-## Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
+### Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />)
 
 The dataset in _churn.csv_ contains the churn status of 10,000 customers, along with 14 attributes that include:
 
@@ -198,10 +169,6 @@ DATA_FILE = "churn.csv"  # Data file name
 ```
 
 This code downloads a publicly available version of the dataset, and then stores that dataset in a Fabric lakehouse:
-
- Important
-
-[Add a lakehouse](https://aka.ms/fabric/addlakehouse) to the notebook before you run it. Failure to do so will result in an error.
 
 PythonCopy
 
@@ -274,9 +241,7 @@ df = df.toPandas()
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-3-perform-exploratory-data-analysis)
 
-- [ ]  Tick this box to indicate Step 2 is complete. 
-
-## Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell <img src=i4uc7ogh.jpg](images/i4uc7ogh.jpg />).
+### Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#display-raw-data)
 
@@ -504,8 +469,6 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-4-perform-model-training-and-tracking)
 
-- [ ]  Tick this box to indicate Step 3 is complete. 
-
 ## Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
 
 With the data in place, you can now define the model. Apply random forest and LightGBM models in this notebook.
@@ -695,9 +658,6 @@ To view your experiments:
 
 <img src=images/0756z1nk.jpg />
 
-
-- [ ]  Tick this box to indicate Step 4 is complete. 
-
 ## Step 5: Evaluate and save the final machine learning model (Ctrl + Enter or Press Run cell icon next to the cell <img src=images/i4uc7ogh.jpg />).
 
 Open the saved experiment from the workspace to select and save the best model:
@@ -820,8 +780,6 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#step-6-access-visualizations-in-power-bi)
 
-- [ ]  Tick this box to indicate Step 5 is complete. 
-
 ## Step 6: Access visualizations in Power BI
 
 **Note**: If you are encountering error **Cannot load model** it might be the chance that the **Power BI Pro/PPU/Trial** license is not activated for the user. Recheck whether you have activate the trail to get Power BI authering experience. This was covered in the **Configure Workspace** earlier section under **Step 2** (9. Click on User Profile in the top right corner, then select Free trial from the user profile menu, and finally click Activate in the popup window).
@@ -903,8 +861,6 @@ print(f"Full run cost {int(time.time() - ts)} seconds.")
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#related-content)
 
-- [ ]  Tick this box to indicate Step 6 is complete. 
-
 **Congratulations**, you have successfully completed **Exercise 1 - Data Science in Fabric**!
 
 ## Related content
@@ -963,8 +919,6 @@ This application automatically syncs all Microsoft OneLake items that you have a
     <img src=images/mdssvckf.jpg />
 
 You have successfully logged in to **Microsoft OneLake File Explorer** and explored its features. You can now manage your OneLake data directly from Windows File Explorer.
-
-- [ ]  Tick this box to indicate OneLake File Explorer setup is complete. 
 
 ## Power BI Desktop
 
@@ -1037,8 +991,6 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
 Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power BI Desktop**.
 
-- [ ]  Tick this box to indicate Power BI Desktop setup is complete. 
-
 ## VS Code
 
 1. **Configure VS Code for Data Science:**
@@ -1110,8 +1062,6 @@ Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power B
         <img src=images/e5kvqifc.jpg />
 
 Exploring Fabric in the local VS Code IDE allows you to seamlessly manage and execute your data science projects with ease.
-
-- [ ]  Tick this box to indicate VS Code setup is complete. 
 
 ===
 
@@ -1282,8 +1232,6 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
 This exercise demonstrates how Copilot can streamline your data science tasks, making it easier to build and refine models.
 
-- [ ]  Tick this box to indicate Copilot Data Science Experience is complete. 
-
 ===
 
 # Exercise 4 - Power BI visualization + PBI Copilot 
@@ -1337,8 +1285,6 @@ This lab consists of **five different sections**/exercises and here is an overvi
     <img src=images/y253del9.jpg />
 
 The Copilot experience in Power BI streamlines report creation, making data insights more accessible and actionable. Enjoy the enhanced productivity and ease of use that Copilot brings to your data analysis tasks!
-
-- [ ]  Tick this box to indicate Power BI Service + Copilot is complete. 
 
 ## Power BI Desktop + Copilot 
 (if you have not completed this in **Client tools** section.)
@@ -1410,9 +1356,7 @@ The Copilot experience in Power BI streamlines report creation, making data insi
         Create a page to examine the age distribution of customers.
         ```
 
-Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power BI Desktop**.
-
-- [ ]  Tick this box to indicate Power BI Desktop + Copilot is complete. 
+Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power BI Desktop**. 
 
 **Congratulations** on successfully completing all the lab exercises! We hope you enjoyed the experience. Please feel free to share your feedback. We look forward to seeing you again soon.
 
