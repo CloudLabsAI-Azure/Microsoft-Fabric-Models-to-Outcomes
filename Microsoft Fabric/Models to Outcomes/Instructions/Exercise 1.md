@@ -731,7 +731,7 @@ Access your saved table in Power BI:
 
     ![](./images/29042025(25).png)
 
-2. Select the lakehouse **CustomersLH** that you added to this notebook.
+2. Select the lakehouse **CustomersLH** you added to this notebook.
 
     ![](./images/29042025(26).png)
 
@@ -741,9 +741,9 @@ Access your saved table in Power BI:
 
 5. In the ribbon, click **New semantic model**.
 
-   - Under `dbo > Tables`, check the box for **`df_pred_results`**.  
-
-   - Enter **ChurnDS** as the name for the semantic model.  
+   - Enter **ChurnDS** as the name for the semantic model.
+     
+   - Under `dbo > Tables`, check the box for **`df_pred_results`**
 
    - Click **Confirm** to create the Power BI semantic model linked to the prediction results.
 
