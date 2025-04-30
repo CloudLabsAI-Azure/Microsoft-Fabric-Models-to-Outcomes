@@ -9,26 +9,33 @@ In this lab, you'll use Copilot in a Microsoft Fabric Data Science notebook to b
 
 Let's create a **new notebook** from the **Lakehouse** Explorer and dive into the **Copilot** Data Science notebook experience.
 
-1. To Create a New Notebook, Open the Lakehouse, click on **Open notebook**, and then select **New notebook**.
+1. On the Fabric portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
 
-    <img src=images/rfg51nq2.jpg />
+    ![](./images/29042025(66).png)
+
+2. On the **Home** tab, click on **Open notebook**, then select **New notebook**.
+
+    ![](./images/29042025(67).png)
+
+4. After successful creation of sample notebook, you may explore the tour by clicking **Show me** or **Skip tour**.
+
+    ![](./images/29042025(8).png)
 
 2. After creating a new notebook, expand the Lakehouses to view tables and files, then click on **Copilot** in the notebook ribbon.
 
-    <img src=images/oban564n.jpg />
+    ![](./images/29042025(69).png)
 
 1. Click on **Get Started** in the Copilot chat window. You'll notice a new cell added at the top of the notebook, which is essential for activating Copilot in the notebook. Make sure to **execute this first cell to activate Copilot** and allow it to understand the notebook's context.
 
-   <img src=images/6dyyepkq.jpg />
+   ![](./images/29042025(70).png)
 
 3. Expand your **Lakehouse** and the **Files** used in the previous excercise. After successfully executing the first cell, right click on **churn.csv** and select **Load data**, then **Spark**.
 
-    <img src=images/5t4w8v5a.jpg />
+    ![](./images/29042025(71).png)
 
 1. Load the **churn.csv** and displays the records.
 
-    <img src=images/bpfaspuy.jpg />
-
+    ![](./images/29042025(72).png)
     
 4. Enter the following prompt in Copilot to analyze and get insights about the data.
 
@@ -36,7 +43,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     `Analyze df and provide insights about the data`
 
-    <img src=images/8civekw6.jpg />
+    ![](./images/29042025(73).png)
 
 5. **Generate Code with Natural Language Instructions**:
 
