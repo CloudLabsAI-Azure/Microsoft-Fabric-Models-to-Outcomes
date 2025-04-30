@@ -9,7 +9,7 @@ In this lab, you'll use Copilot in a Microsoft Fabric Data Science notebook to b
 
 Let's create a **new notebook** from the **Lakehouse** Explorer and dive into the **Copilot** Data Science notebook experience.
 
-1. On the Fabric portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
+1. On the Fabric/PowerBI portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
 
     ![](./images/29042025(66).png)
 
@@ -56,7 +56,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     Load churn.csv from the Files folder into a pandas dataframe and then print the first 5 records
     ```
 
-    <img src=images/06oc341b.jpg />
+    ![](./images/29042025(74).png)
 
 6. **Use Copilot Chat Pane**:
 
@@ -67,7 +67,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     Generate a code for calculating the percentage of customers who have churned in the dataset and display the results.
     ```
 
-    <img src=images/zzmut0d8.jpg />
+    ![](./images/29042025(75).png)
 
     Alternatively, you can continue using the `%%code` magic **within the notebook cell**.
 
@@ -89,7 +89,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     delete null values and duplicate values from the df dataframe. Drop columns 'RowNumber', 'CustomerId', 'Surname' from the df dataframe
     ```
 
-    <img src=images/0wuusz0i.jpg />
+    ![](./images/29042025(76).png)
 
 8. **Perform Exploratory Data Analysis**:
 
@@ -102,7 +102,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     show the data distribution from all features in the df dataframe as charts
     ```
 
-    <img src=images/c2hkfvys.jpg />
+    ![](./images/29042025(77).png)
 
     Create a correlation chart using Copilot. 
    
@@ -113,7 +113,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     create a correlation chart with 'CreditScore', 'Age', 'Balance', 'EstimatedSalary', 'Tenure', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'Exited' features from the df dataframe
     ```
 
-    <img src=images/pbabu9x6.jpg />
+    ![](./images/29042025(78).png)
 
 9. **Feature Engineering**:
 
@@ -124,11 +124,11 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     one hot encode Geography and Gender features from df
     ```
 
-    <img src=images/n9zftf02.jpg />
+    ![](./images/29042025(79).png)
 
     If you encounter an error, you can **regenerate** the result by running the prompt again or copy and paste the **error message into the Copilot chat** window to resolve it.
 
-    <img src=images/vpen1jbb.jpg />
+    ![](./images/29042025(80).png)
 
 10. **Model Training and Testing**:
 
