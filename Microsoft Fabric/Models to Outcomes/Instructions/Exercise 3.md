@@ -9,7 +9,7 @@ In this lab, you'll use Copilot in a Microsoft Fabric Data Science notebook to b
 
 Let's create a **new notebook** from the **Lakehouse** Explorer and dive into the **Copilot** Data Science notebook experience.
 
-1. On the Fabric/PowerBI portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
+1. On the Fabric/Powerbi portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
 
     ![](./images/29042025(66).png)
 
@@ -154,6 +154,4 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
 In this lab you created a notebook, loaded the **churn.csv** dataset, cleaned and explored the data, performed feature engineering, and trained a Random Forest model all with Copilot's help, streamlining the data science process with AI-assisted code generation.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
-
-![alt text](image-7.png)
+You have successfully completed the lab.
