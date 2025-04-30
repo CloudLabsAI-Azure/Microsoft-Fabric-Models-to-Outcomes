@@ -29,7 +29,7 @@ This application automatically syncs all Microsoft OneLake items that you have a
 
     - When the installation dialog box appears, click on **Install** to begin the installation.
      
-      ![](./images/29042025(87).png)
+      ![](./images/L2T1-i.png)
 
 2. Upon launching, a login prompt will appear. Enter your email/username and click **Next**.
 
