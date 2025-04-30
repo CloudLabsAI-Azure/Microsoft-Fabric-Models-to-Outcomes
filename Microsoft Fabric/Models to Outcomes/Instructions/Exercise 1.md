@@ -97,7 +97,7 @@ By the end of this lab, you’ll have a solid foundation for performing data sci
 
 ## Task 2.2 - Data Science in Fabric (Continued)
 
-Follow the steps below to continue with the exercise. In this section, you will run the cells in the notebook sequentially.
+Please follow the steps below to continue with the exercise. In this section, you will run the cells in the notebook sequentially.
 
 ### **Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell)**
 
