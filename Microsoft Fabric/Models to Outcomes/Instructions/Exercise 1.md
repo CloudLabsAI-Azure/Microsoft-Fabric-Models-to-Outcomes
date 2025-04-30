@@ -23,7 +23,7 @@ By the end of this lab, you’ll have a solid foundation for performing data sci
 
 1. In the top-right corner of Power BI, click the **User icon**, then select **Free trial** from the menu.
 
-    ![alt text](image.png)
+    ![image](https://github.com/user-attachments/assets/cc9e720d-8e30-4ef3-9f94-be353a03afe1)
 
 1. On Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**.
 
