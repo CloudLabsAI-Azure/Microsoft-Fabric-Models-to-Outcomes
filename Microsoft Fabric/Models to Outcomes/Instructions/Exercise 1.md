@@ -231,8 +231,6 @@ df = (
 )
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#create-a-pandas-dataframe-from-the-dataset)
-
 ### **Create a pandas DataFrame from the dataset**
 
 This code converts the Spark DataFrame to a pandas DataFrame, for easier processing and visualization:
@@ -447,8 +445,6 @@ SEED = 12345
 df_clean = spark.read.format("delta").load("Tables/df_clean").toPandas()
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#generate-an-experiment-for-tracking-and-logging-the-models-by-using-mlflow)
-
 ### **Generate an experiment for tracking and logging the models by using MLflow**
 
 This section shows how to generate an experiment, and it specifies the model and training parameters and the scoring metrics. Additionally, it shows how to train the models, log them, and save the trained models for later use.
@@ -473,8 +469,6 @@ mlflow.set_experiment(EXPERIMENT_NAME) # Use a date stamp to append to the exper
 mlflow.autolog(exclusive=False)
 ```
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#import-scikit-learn-and-lightgbm)
-
 ### **Import scikit-learn and LightGBM**
 
 PythonCopy
@@ -486,8 +480,6 @@ from lightgbm import LGBMClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score, precision_score, confusion_matrix, recall_score, roc_auc_score, classification_report
 ```
-
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#prepare-training-and-test-datasets)
 
 ### **Prepare training and test datasets**
 

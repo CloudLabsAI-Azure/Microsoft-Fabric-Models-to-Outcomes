@@ -5,25 +5,33 @@
 ## Introduction
 In this lab, you will explore how to use Copilot in Power BI Service and Power BI Desktop. You will create a semantic model from a Lakehouse table and use Copilot to generate reports using simple prompts.
 
-## Power BI Service + Copilot
+1. On the Fabric/PowerBI portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
 
-1. **Create a Semantic Model from Lakehouse:**
+    ![](./images/29042025(66).png)
 
-    Click on the Lakehouse table, then click **New Semantic Model** at the top. Select the table under the dbo schema and provide a name to **Confirm** as covered in the first exercise. 
+5. In the Home tab, click **New semantic model**.
 
-    <img src=images/o0vnrltc.jpg />
+   - Enter **ChurnResultDS** as the name for the semantic model. 
 
-2. **Create a Blank report:**
+   - Under `dbo > Tables`, check the box for **`df_pred_results`**.   
 
-    Return to the **Workspace**, locate the newly created **semantic model**, click on the **more options (...)** menu, and select **Create report**.
+   - Click **Confirm** to create the Power BI semantic model linked to the prediction results.
 
-    <img src=images/0dib32lx.jpg />
+     ![](./images/29042025(81).png)
 
-3. **Activate Copilot:**
+     ![](./images/29042025(82).png)
 
-    After creating the blank report on top of semantic model, click on **Copilot** in the top ribbon, then click **Get Started** in the Copilot chat window, similar to the Data Science experience. (**Note**: Copilot works only with **F64 and above SKUs** + Power BI license Pro/PPU/Trial for authoring).
+1. Return to the **Workspace** and locate the **Semantic model** you created.  
 
-    <img src=images/cne0srx3.jpg />
+   - Click the **more options (...)** next to it, then select **Create report**.  
+
+   - This action will open the Power BI report **authoring page**, where you can begin designing your report.
+
+     ![](./images/29042025(83).png)
+
+3. After creating the blank report on top of semantic model, click on **Copilot** in the top ribbon, then click **Get Started** in the Copilot chat window, similar to the Data Science experience.
+
+    ![](./images/29042025(84).png)
 
 4. **Build a report using Copilot:**
 
