@@ -65,6 +65,8 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
 1. Open the **Power BI Desktop** located on the desktop of your lab environment.
 
+    ![](./images/29042025(92).png)
+
 2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
     > **Note:** If you don't see the username dialog box, click on the **sign-in icon** located in the top-right corner of the **Labvm**.
@@ -138,6 +140,8 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 ## Task 3: Configuring VS Code for Microsoft Fabric Development
 
 1. Open the **Visual Studio Code** located on the desktop of your lab environment.
+
+    ![](./images/29042025(91).png)
 
 1. Navigate to the **Extensions** in VS Code and search for **Fabric Data Engineering VS Code** to install it.
 

@@ -38,9 +38,9 @@ Welcome to your Data Factory in a Day with Microsoft Fabric workshop! We've prep
 
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
  
-![](./Media/23042025(2).png)
+![](./images/29042025(88).png)
 
 ## Virtual Machine & Lab Guide
  
@@ -50,7 +50,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![](./Media/23042025(3).png)
+![](./images/29042025(89).png)
  
 ## Utilizing the Split Window Feature
  
@@ -74,7 +74,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
 1. On your virtual machine, click on the **Power BI Portal** icon as shown below:
  
-   ![](./Media/23042025(6).png)
+   ![](./images/29042025(90).png)
 
 2. On the **Enter your email, we'll check if you need to create a new account** tab you will see the login screen, in that enter the following email/username, and click on **Submit**.
  
