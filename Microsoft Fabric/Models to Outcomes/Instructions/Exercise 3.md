@@ -154,4 +154,4 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
 In this lab you created a notebook, loaded the **churn.csv** dataset, cleaned and explored the data, performed feature engineering, and trained a Random Forest model all with Copilot's help, streamlining the data science process with AI-assisted code generation.
 
-You have successfully completed the lab.
+### You have successfully completed the lab.
