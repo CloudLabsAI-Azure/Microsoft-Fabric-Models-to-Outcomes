@@ -15,8 +15,6 @@
 
 In this lab, you will begin an end-to-end Data Science workflow using Microsoft Fabric. The goal is to build a predictive model that determines whether bank customers are likely to churn, i.e., stop doing business with the bank. You'll walk through each phase of the workflow, from installing necessary libraries to training machine learning models and visualizing results in Power BI.
 
-By the end of this lab, you’ll have a solid foundation for performing data science tasks in Microsoft Fabric, using tools like Data Wrangler, scikit-learn, LightGBM, MLflow, and built-in visualization features.
-
 ![](./images/29042025(11).png)
 
 ## Task 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
