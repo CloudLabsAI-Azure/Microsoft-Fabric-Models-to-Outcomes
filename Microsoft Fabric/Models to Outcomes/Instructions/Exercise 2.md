@@ -17,13 +17,13 @@ In this lab, you will explore the core tools and capabilities of Microsoft Fabri
 
 This application automatically syncs all Microsoft OneLake items that you have access to in Windows File Explorer. To log in to Microsoft OneLake File Explorer and explore its features.
 
-1. First, you need to manually download the OneLake Explorer. Please follow the steps below:
+1. To begin, download the OneLake Explorer manually by following these steps:
 
     - On the **LabVM**, open **File Explorer**.
 
       ![](./images/29042025(85).png)
 
-    - Navigate to `C:\Packages` and locate the **OneLake** application.
+    - Navigate to `C:\Packages` and Open the **OneLake** application.
 
       ![](./images/29042025(86).png)
 
