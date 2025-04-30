@@ -1,18 +1,9 @@
-===
+# **Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 4**
 
-# Exercise 4 - Power BI visualization + PBI Copilot 
+![](./images/png4.png)
 
-This lab consists of **five different sections**/exercises and here is an overview. You are currently in **Exercise 4 - Power BI visualization + PBI Copilot (Optional)** exercise.
-
-- **[Configure Workspace](#configure-workspace)**
-- **[Exercise 1 - Data Science in Fabric](#exercise-1---data-science-in-fabric-notebook-setup)**
-    - **[Part1 - Data Science in Fabric (Notebook Setup)](#exercise-1---data-science-in-fabric-notebook-setup)**
-    - **[Part2 - Data Science in Fabric (Continued)](#exercise-1---data-science-in-fabric-continued)**
-- **[Exercise 2 - Client Tools (Optional)](#exercise-2---client-tools)**
-- **[Exercise 3 - Copilot Data Science Experience (Optional)](#exercise-3---copilot-data-science-experience-enhanced-customer-churn-sample-with-copilot)**
-- **[Exercise 4 - Power BI Visualization + PBI Copilot (Optional)](#exercise-4---power-bi-visualization--pbi-copilot)**
-- **[Thank You Note and Feedback Request!](#feedback-your-feedback-is-valuable)**
-
+## Introduction
+In this lab, you will explore how to use Copilot in Power BI Service and Power BI Desktop. You will create a semantic model from a Lakehouse table and use Copilot to generate reports using simple prompts.
 
 ## Power BI Service + Copilot
 
@@ -108,7 +99,7 @@ The Copilot experience in Power BI streamlines report creation, making data insi
 
     - Ask Copilot to Suggest content for a new report page.
     
-        ***##Copilot Prompt or Press Respective Suggestions:***
+        ***## Copilot Prompt or Press Respective Suggestions:***
 
         ```
         Suggest content for a new report page
@@ -116,12 +107,13 @@ The Copilot experience in Power BI streamlines report creation, making data insi
 
     - Ask Copilot to create a report from the selection with your enhanced prompt.
 
-        ***##Copilot Prompt or Press Create from the suggestions:***
+        ***## Copilot Prompt or Press Create from the suggestions:***
 
         ```
         Create a page to examine the age distribution of customers.
         ```
 
-Now, you can explore **Copilot** with **Semantic Model** and Prompt in **Power BI Desktop**. 
+## Summary
+In this lab, you have explored how to connect to a semantic model and use Copilot to quickly build reports in Power BI. You’ve seen how AI can assist in creating report pages, making data analysis faster and easier.
 
-**Congratulations** on successfully completing all the lab exercises! We hope you enjoyed the experience. Please feel free to share your feedback. We look forward to seeing you again soon.
+### You have successfully completed the lab.

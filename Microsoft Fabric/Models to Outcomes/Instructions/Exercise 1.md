@@ -1,5 +1,7 @@
 # **Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 1**
 
+![](./images/png1.png)
+
 ## Contents
 
 - Introduction

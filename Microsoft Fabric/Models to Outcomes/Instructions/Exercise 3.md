@@ -1,7 +1,9 @@
 # **Advanced Analytics: From Models to Outcomes with Microsoft Fabric - Lab 3**
 
+![](./images/png3.png)
+
 ## Introduction
-In this lab, you'll use **Copilot** in a Microsoft Fabric Data Science notebook to build a complete machine learning workflow, from loading data to model training, using natural language prompts.
+In this lab, you'll use Copilot in a Microsoft Fabric Data Science notebook to build a complete machine learning workflow, from loading data to model training, using natural language prompts.
 
 **ATTENTION**: *AI-generated code may contain errors or unintended operations. Carefully review the code in this cell before running it.*
 
