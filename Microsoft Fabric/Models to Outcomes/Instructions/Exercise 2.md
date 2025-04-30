@@ -11,15 +11,25 @@
 
 ## Introduction:
 
-In this lab, you will explore the core tools and capabilities of Microsoft Fabric, including OneLake File Explorer, Power BI Desktop, and Visual Studio Code (VS Code) with the Synapse extension. You will learn how to access and manage your OneLake data directly from Windows File Explorer, build and analyze reports using Copilot in Power BI, and configure VS Code to develop and interact with Fabric artifacts and Lakehouse data. This hands-on lab is designed to provide a foundational understanding of how these tools integrate to support end-to-end data science and analytics workflows within the Microsoft Fabric ecosystem.
+In this lab, you will explore the core tools and capabilities of Microsoft Fabric, including OneLake File Explorer, Power BI Desktop, and Visual Studio Code (VS Code). You will learn how to access and manage your OneLake data directly from Windows File Explorer, build and analyze reports using Copilot in Power BI, and configure VS Code to develop and interact with Fabric artifacts and Lakehouse data.
 
 ## Task 1: Setting Up and Exploring OneLake File Explorer
 
 This application automatically syncs all Microsoft OneLake items that you have access to in Windows File Explorer. To log in to Microsoft OneLake File Explorer and explore its features.
 
-1. On the Lab-vm, open the **Search bar** menu, type **OneLake** in the search bar, and select it from the search results.
+1. First, you need to manually download the OneLake Explorer. Please follow the steps below:
 
-    ![](./images/29042025(46).png)
+    - On the **LabVM**, open **File Explorer**.
+
+      ![](./images/29042025(85).png)
+
+    - Navigate to `C:\Packages` and locate the **OneLake** application.
+
+      ![](./images/29042025(86).png)
+
+    - When the installation dialog box appears, click on **Install** to begin the installation.
+     
+      ![](./images/29042025(87).png)
 
 2. Upon launching, a login prompt will appear. Enter your email/username and click **Next**.
 
@@ -56,6 +66,8 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 1. Open the **Power BI Desktop** located on the desktop of your lab environment.
 
 2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+
+    > **Note:** If you don't see the username dialog box, click on the **sign-in icon** located in the top-right corner of the **Labvm**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -173,7 +185,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
 ## Summary:
 
-In this lab, you have explored the fundamental tools and features of Microsoft Fabric, including OneLake File Explorer, Power BI Desktop, and Visual Studio Code with the Synapse extension. You accessed and managed OneLake data through Windows File Explorer, built and analyzed reports using Copilot in Power BI, and configured VS Code to interact with Fabric artifacts and Lakehouse data. This lab provided a hands-on introduction to how these tools work together to enable end-to-end data science and analytics workflows within the Microsoft Fabric ecosystem.
+In this lab, you have explored the fundamental tools and features of Microsoft Fabric, including OneLake File Explorer, Power BI Desktop, and Visual Studio Code You accessed and managed OneLake data through Windows File Explorer, built and analyzed reports using Copilot in Power BI, and configured VS Code to interact with Fabric artifacts and Lakehouse data.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
