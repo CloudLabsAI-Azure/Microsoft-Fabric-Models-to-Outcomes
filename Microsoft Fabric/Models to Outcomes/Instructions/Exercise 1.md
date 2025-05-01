@@ -19,26 +19,6 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
 
 ## Task 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
 
-1. In the top-right corner of Power BI, click the **User icon**, then select **Free trial** from the menu.
-
-    ![image](https://github.com/user-attachments/assets/cc9e720d-8e30-4ef3-9f94-be353a03afe1)
-
-1. On Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**.
-
-    ![alt text](image-1.png)
-
-1. On Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
-
-    ![alt text](image-2.png)
-
-1. On Welcome to the Fabric view dialog opens, click **Cancel**.
-
-    ![alt text](image-3.png)
-
-1. You will be navigated to the **Microsoft** **Fabric Home page**.
-
-    ![alt text](image-4.png)
-
 1. On the **Microsoft Fabric Home** page, click **+ New workspace** to create a new workspace.
 
     ![](./images/29042025(1).png)
