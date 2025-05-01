@@ -167,7 +167,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(60).png)
 
-1. When prompted with the **Do you trust the authors of the files in this folder?** message, check the box labeled **Trust the authors of all files in the parent folder**. Click the **Yes, I trust the authors** button to enable all features and exit restricted mode in Visual Studio Code.
+1. When prompted with the **Do you trust the authors of the files in this folder?** message, check the box labelled **Trust the authors of all files in the parent folder**. Click the **Yes, I trust the authors** button to enable all features and exit restricted mode in Visual Studio Code.
 
     ![](./images/29042025(63).png)
    
@@ -194,4 +194,3 @@ In this lab, you have explored the fundamental tools and features of Microsoft F
 Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![alt text](image-7.png)
-
