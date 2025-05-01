@@ -72,9 +72,11 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 ## Let's Get Started with Power BI Portal
  
-1. On your virtual machine, click on the **Power BI Portal** icon as shown below:
- 
-   ![](./images/29042025(90).png)
+1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
+
+   ```
+   https://app.fabric.microsoft.com/home
+   ```
 
 2. On the **Enter your email, we'll check if you need to create a new account** tab you will see the login screen, in that enter the following email/username, and click on **Submit**.
  
@@ -92,9 +94,13 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![alt text](image-14.png)
 
-1. You should be able to view the Power BI Portal.
+1. You will be navigated to the **Microsoft** **Fabric Home page**.
 
-   ![alt text](image-15.png)
+    ![alt text](image-4.png)
+
+1. On Welcome to the Fabric view dialog opens, click **Cancel**.
+
+    ![alt text](image-3.png)
    
 ## Support Contact
  

@@ -5,7 +5,7 @@
 ## Contents
 
 - Introduction
-- Task 1 - Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
+- Task 1 - Getting Started with Microsoft Fabric and Set Up a Workspace
 - Task 2 - Data Science in Fabric
     - Task 2.1 - Data Science in Fabric (Notebook Setup)
     - Task 2.2 - Data Science in Fabric (Continued)
@@ -17,7 +17,7 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
 
 ![](./images/29042025(11).png)
 
-## Task 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
+## Task 1: Getting Started with Microsoft Fabric and Set Up a Workspace
 
 1. On the **Microsoft Fabric Home** page, click **+ New workspace** to create a new workspace.
 
