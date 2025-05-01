@@ -34,7 +34,7 @@ This streamlined process enables end-to-end data science from problem definition
 
 ## Getting Started with the Lab
  
-Welcome to your Data Factory in a Day with Microsoft Fabric workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Advanced Analytics from Models to Outcomes with Microsoft Fabric workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
  
