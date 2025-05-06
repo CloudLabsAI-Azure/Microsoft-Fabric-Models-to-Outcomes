@@ -82,7 +82,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![alt text](image-12.png)
+     ![](./images/06052025(1).png)
  
 3. Now enter the following password and click on **Sign in**.
  
