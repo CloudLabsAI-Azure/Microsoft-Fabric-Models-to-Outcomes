@@ -81,6 +81,8 @@ Please follow the steps below to continue with the exercise. In this section, yo
 
 ### **Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell)**
 
+>**NOTE :** Please follow these steps to continue with the task. Run each cell in the notebook one by one. Execute each cell to install the required libraries and proceed with the rest of the exercise.
+
 For machine learning model development or ad-hoc data analysis, you might need to quickly install a custom library for your Apache Spark session. You have two options to install libraries.
 
 - Use the inline installation capabilities (`%pip` or `%conda`) of your notebook to install a library, but only in your current notebook.
@@ -100,6 +102,8 @@ For machine learning model development or ad-hoc data analysis, you might need t
     ![](./images/29042025(13).png)
 
 ### **Step 2: Load the data (Ctrl + Enter or Press Run cell icon next to the cell)**
+
+> **NOTE:** Run each cell in the notebook sequentially. Make sure to execute every cell.
 
 The dataset in _churn.csv_ contains the churn status of 10,000 customers, along with 14 attributes that include:
 
@@ -222,6 +226,8 @@ df = df.toPandas()
 ```
 
 ### **Step 3: Perform exploratory data analysis (Ctrl + Enter or Press Run cell icon next to the cell)**
+
+> **NOTE:** Run each cell in the notebook sequentially. Make sure to execute every cell.
 
 ### **Display raw data**
 
@@ -412,6 +418,8 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 
 ### **Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell)**
 
+> **NOTE:** Run each cell in the notebook sequentially. Make sure to execute every cell.
+
 With the data in place, you can now define the model. Apply random forest and LightGBM models in this notebook.
 
 Use the scikit-learn and LightGBM libraries to implement the models, with a few lines of code. Additionally, use MLfLow and Fabric Autologging to track the experiments.
@@ -586,6 +594,8 @@ To view your experiments:
     ![](./images/29042025(24).png)
 
 ### **Step 5: Evaluate and save the final machine learning model (Ctrl + Enter or Press Run cell icon next to the cell)**
+
+> **NOTE:** Run each cell in the notebook sequentially. Make sure to execute every cell.
 
 Open the saved experiment from the workspace to select and save the best model:
 
