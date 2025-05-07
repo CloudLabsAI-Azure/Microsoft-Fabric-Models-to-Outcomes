@@ -27,13 +27,15 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
 
     ![](./images/29042025(2).png)
 
-4. Choose **Fabric capacity** and select the available Capacity from the dropdown list.
+4. Choose License mode as **Fabric capacity**.
+
+1. Select the available **Capacity** from the dropdown list. If the capacity is not already selected, please select it. By default, it should be selected.
     
 5. For the **Semantic model storage format**, select **Large Semantic model storage format**, then click **Apply**. 
 
     > **Note:** Enabling the **Large semantic model storage format** in Premium capacities allows semantic models to exceed default size limits, with the maximum size determined by the capacity or admin settings.
 
-    ![](./images/29042025(3).png)
+    ![](./images/29042025(96).png)
 
     > **Note:** If a task flows preview feature notification appears, click **Got it** to proceed. 
 
