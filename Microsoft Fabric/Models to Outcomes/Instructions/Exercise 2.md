@@ -77,7 +77,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
      ![](./images/29042025(47).png)
 
-1. When the **Pick an account** dialog appears, select your username.
+1. When the **Pick an account** dialog appears, select your username account.
   
     ![](./images/29042025(113).png)
 
@@ -97,9 +97,11 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
      ![](./images/29042025(50).png)
 
+    >**Note:** If you're unable to find Copilot, try zooming out the browser tab to 80% - it should then become visible.
+
 1. Navigate to the **Home menu**, click **Get data**, and select **More...** to connect data from multiple sources.
 
-      ![](./images/29042025(51).png)
+      ![](./images/29042025(114).png)
 
 1. In the pop-up window, click **Microsoft Fabric** to choose the respective data stores. For this exercise, use **Power BI semantic models** and click **Connect**.
 
@@ -110,6 +112,10 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 1. After selecting **ChurnDS**, click the **Connect** button in the bottom-right corner of the window to proceed.
 
     ![](./images/29042025(53).png)
+
+1. Once the blank report is created on top of the semantic model, click **Get Started** in the Copilot chat window.
+
+    ![](./images/29042025(115).png)
 
 5. You can build the reports manually and use Copilot to suggest and create them based on your selection. Just follow along with Copilot's instructions and responses.
 
