@@ -433,12 +433,12 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 
 ### **Summary of observations from the exploratory data analysis**
 
-- Most of the customers are from France. Spain has the lowest churn rate, compared to France and Germany.
-- Most customers have credit cards
-- Some customers are both over the age of 60 and have credit scores below 400. However, they can't be considered as outliers
-- Very few customers have more than two bank products
-- Inactive customers have a higher churn rate
-- Gender and tenure years have little impact on a customer's decision to close a bank account
+- Most of the customers are from France comparing to Spain and Germany, while Spain has the lower churn rate comparing to France and Germany.
+- Most of the customers have credit cards.
+- There are customers whose age and credit score are above 60 and below 400, respectively, but they can't be considered as outliers.
+- Very few customers have more than two of the bank's products.
+- Customers who aren't active have a higher churn rate.
+- Gender and tenure years don't seem to have an impact on customer's decision to close the bank account.
 
 ### **Step 4: Perform model training and tracking (Ctrl + Enter or Press Run cell icon next to the cell)**
 
@@ -481,6 +481,8 @@ mlflow.set_experiment(EXPERIMENT_NAME) # Use a date stamp to append to the exper
 mlflow.autolog(exclusive=False)
 ```
 
+![](./images/29042025(104).png)
+
 ### **Import scikit-learn and LightGBM**
 
 PythonCopy
@@ -506,7 +508,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 
 [](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#apply-smote-to-the-training-data)
 
-### **Apply SMOTE to the training data**
+### **Apply SMOTE to the training data to synthesize new samples for the minority class**
 
 Imbalanced classification has a problem, because it has too few examples of the minority class for a model to effectively learn the decision boundary. To handle this, Synthetic Minority Oversampling Technique (SMOTE) is the most widely used technique to synthesize new samples for the minority class. Access SMOTE with the `imblearn` library that you installed in step 1.
 
@@ -609,7 +611,7 @@ To view your experiments:
 
     ![](./images/29042025(22).png)
 
-3. Compare run details in a list view. Click **View run list** under **Compare runs** to select certain runs to visually compare run metrics. 
+3. To compare run details in a list format, go to **View > Run list**. Use the **Compare runs** option to select specific runs and visually analyze their metrics side by side.
 
     ![](./images/29042025(23).png)
 
@@ -621,19 +623,21 @@ To view your experiments:
 
 > **NOTE:** Run each cell in the notebook sequentially. Make sure to execute every cell.
 
-Open the saved experiment from the workspace to select and save the best model:
+1. Return to the notebook and execute the following cell.
 
-PythonCopy
+    Open the saved experiment from the workspace to select and save the best model:
 
-```python
-# Define run_uri to fetch the model
-# MLflow client: mlflow.model.url, list model
-load_model_rfc1_sm = mlflow.sklearn.load_model(f"runs:/{rfc1_sm_run_id}/model")
-load_model_rfc2_sm = mlflow.sklearn.load_model(f"runs:/{rfc2_sm_run_id}/model")
-load_model_lgbm1_sm = mlflow.lightgbm.load_model(f"runs:/{lgbm1_sm_run_id}/model")
-```
+    PythonCopy
 
-[](https://learn.microsoft.com/en-us/fabric/data-science/customer-churn#assess-the-performance-of-the-saved-models-on-the-test-dataset)
+    ```python
+    # Define run_uri to fetch the model
+    # MLflow client: mlflow.model.url, list model
+    load_model_rfc1_sm = mlflow.sklearn.load_model(f"runs:/{rfc1_sm_run_id}/model")
+    load_model_rfc2_sm = mlflow.sklearn.load_model(f"runs:/{rfc2_sm_run_id}/model")
+    load_model_lgbm1_sm = mlflow.lightgbm.load_model(f"runs:/{lgbm1_sm_run_id}/model")
+    ```
+
+    ![](./images/29042025(105).png)
 
 ### **Assess the performance of the saved models on the test dataset**
 
@@ -736,6 +740,8 @@ sparkDF=spark.createDataFrame(df_pred)
 sparkDF.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save(f"Tables/{table_name}")
 print(f"Spark DataFrame saved to delta table: {table_name}")
 ```
+
+![](./images/29042025(106).png)
 
 ### **Step 6: Business Intelligence via Visualizations in Power BI**
 
