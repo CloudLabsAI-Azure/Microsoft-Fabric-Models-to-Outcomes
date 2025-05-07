@@ -110,7 +110,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
     ![alt text](image-4.png)
 
-    >**Note:** If you receive any pop-ups, please close them.
+    >**Note:** If you receive any pop-ups, please **Close** them.
 
     ![](./images/29042025(95).png)
    

@@ -747,7 +747,7 @@ print(f"Spark DataFrame saved to delta table: {table_name}")
 
 Access your saved table in Power BI:
 
-1. On the left, select **OneLake data hub**
+1. On the left, select **OneLake catalog**
 
     ![](./images/29042025(25).png)
 
@@ -773,34 +773,48 @@ Access your saved table in Power BI:
 
 7. Return to the **Workspace** and locate the **Semantic model** you created.  
 
-   - Click the **more options (...)** next to it, then select **Create report**.  
-
-   - This action will open the Power BI report **authoring page**, where you can begin designing your report.
+   - Click the **more options (...)** next to it, then select **Create report**.
 
      ![](./images/29042025(19).png)
 
      ![](./images/29042025(30).png)
 
-     ![](./images/29042025(31).png)
+1. When the **Upgrade to a paid Power BI license** dialog appears, click **Try free** to proceed.
 
-        **💡Quick Tip!💡**</br>
+    ![](./images/29042025(107).png)
 
-        *Enable **Copilot** from the ribbon to get content suggestions for a **new report page** and have it create one for you!!*
+1. When the **All paid features of Power BI are yours for 60 days** dialog appears, click **Got it** to continue.
 
-        Some example visualizations are shown here. The data panel shows the delta tables and columns from the table to select. Upon selecting appropriate x and y axes, you can pick the filters and functions, for example, sum or average of the table column.
+    ![](./images/29042025(108).png)
 
-        **Note:** This shows an illustrated example of how you would analyze the saved prediction results in Power BI. However, for a real customer churn use-case, the platform user may have to do more thorough ideation of what visualizations to create, based on subject matter expertise, and what their firm and business analytics team has standardized as metrics.
+1. This action will open the Power BI report **authoring page**, where you can begin designing your report.
 
-        ![](./images/29042025(39).png)
+    ![](./images/29042025(31).png)
 
-        The Power BI report shows that customers who use more than two of the bank products have a higher churn rate although few customers had more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle aged customers (between 25-45) and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutions. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
+    >**Note:** If you receive any pop-ups, please **Close** them.
 
-        PythonCopy
+    ![](./images/29042025(95).png)
 
-        ```python
-        # Determine the entire runtime
-        print(f"Full run cost {int(time.time() - ts)} seconds.")
-        ```
+    **💡Quick Tip!💡**</br>
+
+    *Enable **Copilot** from the ribbon to get content suggestions for a **new report page** and have it create one for you!!*
+
+    Some example visualizations are shown here. The data panel shows the delta tables and columns from the table to select. Upon selecting appropriate x and y axes, you can pick the filters and functions, for example, sum or average of the table column.
+
+    **Note:** This shows an illustrated example of how you would analyze the saved prediction results in Power BI. However, for a real customer churn use-case, the platform user may have to do more thorough ideation of what visualizations to create, based on subject matter expertise, and what their firm and business analytics team has standardized as metrics.
+
+    ![](./images/29042025(39).png)
+
+    The Power BI report shows that customers who use more than two of the bank products have a higher churn rate although few customers had more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle aged customers (between 25-45) and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutions. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
+
+1. Return to the notebook and execute the following cell.
+
+    PythonCopy
+
+    ```python
+    # Determine the entire runtime
+    print(f"Full run cost {int(time.time() - ts)} seconds.")
+    ```
 
 ## Summary
 
