@@ -24,7 +24,7 @@ The architecture for this lab involves the following key components:
 
 3. **Data Exploration**: With tools like Apache Spark, Python, and Data Wrangler, you can explore and clean the data. This step helps you understand trends and patterns.
 
-4. **Experimentation and ML Modeling**: Fabric supports machine learning using PySpark, SparklyR, and tools like MLflow for experiment tracking. You can build scalable ML models with SynapseML.
+4. **Experimentation and ML Modeling**: Fabric supports machine learning using PySpark, Sparklyr, and tools like MLflow for experiment tracking. You can build scalable ML models with SynapseML.
 
 5. **Enrichment and Operationalization**: Once the models are built, Fabric allows batch scoring and scalable predictions using Spark Predict.
 
