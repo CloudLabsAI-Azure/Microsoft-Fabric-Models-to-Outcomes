@@ -109,6 +109,10 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 1. You will be navigated to the **Microsoft** **Fabric Home page**.
 
     ![alt text](image-4.png)
+
+    >**Note:** If you receive any pop-ups, please close them.
+
+    ![](./images/29042025(95).png)
    
 ## Support Contact
  
