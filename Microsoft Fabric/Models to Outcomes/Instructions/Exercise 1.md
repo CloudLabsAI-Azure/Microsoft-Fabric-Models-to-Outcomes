@@ -59,7 +59,7 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
     
 4. After successful creation of sample notebook, you may explore the tour by clicking **Show me** or **Skip tour**.
 
-    ![](./images/29042025(8).png)
+    ![](./images/29042025(97).png)
 
 5. In the **Explorer** pane, under the **Data items** tab, click **Add data items**. From the dropdown menu, select **New lakehouse**.
 
