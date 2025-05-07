@@ -67,25 +67,19 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(92).png)
 
-2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+1. Click on the **sign-in icon** located in the top-right corner of the **Labvm**.
 
-    > **Note:** If you don't see the username dialog box, click on the **sign-in icon** located in the top-right corner of the **Labvm**.
+    ![](./images/29042025(110).png)
+
+2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
      ![](./images/29042025(47).png)
+
+1. When the **Pick an account** dialog appears, select your username.
   
-3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
-
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
-
-     ![](./images/29042025(40).png)
-
-4. Now enter the following **Password** and click on **Sign in**.
-
-    * Password: <inject key="AzureAdUserPassword"></inject>
-
-      ![](./images/29042025(41).png)
+    ![](./images/29042025(113).png)
 
 1. When prompted with the **"Automatically sign in to all desktop apps and websites on this device?"** screen, click **Yes, all apps**.
 
