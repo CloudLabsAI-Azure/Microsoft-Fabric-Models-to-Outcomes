@@ -81,7 +81,7 @@ Please follow the steps below to continue with the exercise. In this section, yo
 
 ### **Step 1: Install custom libraries (Ctrl + Enter or Press Run cell icon next to the cell)**
 
->**NOTE:** Please follow these steps to continue with the task. Run each cell in the notebook one by one and proceed with the rest of the exercise.
+>**NOTE:** Please follow these steps to continue with the task. Run each cell in the notebook one by one and proceed with the rest of the task.
 
 For machine learning model development or ad-hoc data analysis, you might need to quickly install a custom library for your Apache Spark session. You have two options to install libraries.
 
