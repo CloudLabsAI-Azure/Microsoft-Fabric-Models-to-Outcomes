@@ -3,13 +3,14 @@
 ![](./images/png3.png)
 
 ## Introduction
+
 In this lab, you'll use Copilot in a Microsoft Fabric Data Science notebook to build a complete machine learning workflow, from loading data to model training, using natural language prompts.
 
 **ATTENTION:** *AI-generated code may contain errors or unintended operations. Carefully review the code in this cell before running it.*
 
 Let's create a **new notebook** from the **Lakehouse** Explorer and dive into the **Copilot** Data Science notebook experience.
 
-1. On the Fabric/Power BI portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
+1. Navigate to fabric portal, click on the **ws-<inject key="Deployment ID" enableCopy="false"/>** workspace and select the **CustomersLH** Lakehouse.
 
     ![](./images/29042025(66).png)
 
@@ -17,7 +18,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ![](./images/29042025(67).png)
 
-4. After successful creation of sample notebook, you may explore the tour by clicking **Show me** or **Skip tour**.
+4. After successfully creating the sample notebook, a pop-up may appear prompting you to explore the tour. Click **Skip tour** to proceed.
 
     ![](./images/29042025(8).png)
 
