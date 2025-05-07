@@ -119,7 +119,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(54).png)
 
-    - Ask Copilot to Suggest content for a new report page.
+    - Ask Copilot to suggest content for a new report page.
     
         ***## Copilot Prompt or Press Respective Suggestions:***
 
@@ -145,7 +145,7 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
 
     ![](./images/29042025(55).png)
 
-1. Then, follow the sign-in Launch **Synapse** extension, Click **Select Workspace** and select **Set** in the popup window to set a local work folder. 
+1. Then, follow the sign-in Launch **Synapse** extension, click **Select Workspace** and select **Set** in the popup window to set a local work folder. 
 
     ![](./images/29042025(57).png)
 
