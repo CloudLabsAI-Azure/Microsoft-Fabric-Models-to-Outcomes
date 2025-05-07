@@ -23,15 +23,15 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
 
     ![](./images/29042025(1).png)
 
-3. Enter the workspace name as **ws-<inject key="Deployment ID" enableCopy="false"/>**, then click or expand **Advanced** to assign the license mode for the Fabric workload.
+1. Enter the workspace name as **ws-<inject key="Deployment ID" enableCopy="false"/>**, then click or expand **Advanced** to assign the license mode for the Fabric workload.
 
     ![](./images/29042025(2).png)
 
-4. Choose License mode as **Fabric capacity**.
-
-1. Select the available **Capacity** from the dropdown list. If the capacity is not already selected, please select it. By default, it should be selected.
+1. Choose License mode as **Fabric capacity**.
     
-5. For the **Semantic model storage format**, select **Large Semantic model storage format**, then click **Apply**. 
+1. For the **Semantic model storage format**, select **Large Semantic model storage format**.
+
+1. From the dropdown list, select the available **Capacity**. If it’s not already selected by default, please choose it manually, then click **Apply**.
 
     > **Note:** Enabling the **Large semantic model storage format** in Premium capacities allows semantic models to exceed default size limits, with the maximum size determined by the capacity or admin settings.
 
@@ -57,7 +57,7 @@ In this lab, you will begin an end-to-end Data Science workflow using Microsoft 
 
     ![](./images/29042025(7).png)
     
-4. After successful creation of sample notebook, you may explore the tour by clicking **Show me** or **Skip tour**.
+4. After the sample notebook is successfully created, a pop-up may appear prompting you to explore the tour. Click **Skip tour** to proceed
 
     ![](./images/29042025(97).png)
 
@@ -266,7 +266,7 @@ Launch Data Wrangler directly from the notebook to explore and transform pandas 
 
     ![](./images/29042025(16).png)
 
-    After the Data Wrangler launches, a descriptive overview of the data panel is generated, as shown in the following images. The overview includes information about the dimension of the DataFrame, any missing values, etc. You can use Data Wrangler to generate the script to drop the rows with missing values, the duplicate rows and the columns with specific names. Then, you can copy the script into a cell. The next cell shows that copied script.
+    After the Data Wrangler launches, a descriptive overview of the data panel is generated, as shown in the following images. The overview includes information about the dimension of the DataFrame, any missing values, etc. You can use Data Wrangler to generate the script to drop the rows with missing values, the duplicate rows and the columns with specific names. Then, you can copy the script into a cell. The next cell shows the copied script.
 
     ![](./images/29042025(17).png)
 
@@ -805,7 +805,7 @@ Access your saved table in Power BI:
 
     ![](./images/29042025(39).png)
 
-    The Power BI report shows that customers who use more than two of the bank products have a higher churn rate although few customers had more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle aged customers (between 25-45) and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutions. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
+    The Power BI report shows that customers who use more than two of the bank products have a higher churn rate, although few customers have more than two products. The bank should collect more data, but also investigate other features correlated with more products (see the plot in the bottom left panel). Bank customers in Germany have a higher churn rate than in France and Spain (see the plot in the bottom right panel), which suggests that an investigation into what has encouraged customers to leave could be beneficial. There are more middle-aged customers (between 25-45), and customers between 45-60 tend to exit more. Finally, customers with lower credit scores would most likely leave the bank for other financial institutions. The bank should look into ways that encourage customers with lower credit scores and account balances to stay with the bank.
 
 1. Return to the notebook and execute the following cell.
 
