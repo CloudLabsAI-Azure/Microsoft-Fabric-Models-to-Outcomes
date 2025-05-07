@@ -71,6 +71,10 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 ![alt text](image-11.png)
 
 ## Let's Get Started with Power BI Portal
+
+1. Once the lab is ready, **"Choose privacy settings for your device"** screen will appear and click **Accept** to continue.
+
+   ![](./images/29042025(93).png)
  
 1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
 
@@ -94,13 +98,17 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![alt text](image-14.png)
 
-1. You will be navigated to the **Microsoft** **Fabric Home page**.
-
-    ![alt text](image-4.png)
-
 1. On Welcome to the Fabric view dialog opens, click **Cancel**.
 
     ![alt text](image-3.png)
+
+1. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
+
+   ![](./images/29042025(94).png)
+
+1. You will be navigated to the **Microsoft** **Fabric Home page**.
+
+    ![alt text](image-4.png)
    
 ## Support Contact
  
