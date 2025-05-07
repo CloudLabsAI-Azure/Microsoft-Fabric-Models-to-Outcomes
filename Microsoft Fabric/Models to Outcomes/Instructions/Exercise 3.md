@@ -109,7 +109,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ```
     %%code
-    delete null values and duplicate values from the df dataframe. Drop columns 'RowNumber', 'CustomerId', 'Surname' from the df dataframe
+    Delete null values and duplicate values from the df dataframe. Drop columns 'RowNumber', 'CustomerId', 'Surname' from the df dataframe
     ```
 
     ![](./images/29042025(122).png)
@@ -135,7 +135,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ```python
     %%code
-    create a correlation chart with 'CreditScore', 'Age', 'Balance', 'EstimatedSalary', 'Tenure', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'Exited' features from the df dataframe
+    Create a correlation chart with 'CreditScore', 'Age', 'Balance', 'EstimatedSalary', 'Tenure', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'Exited' features from the df dataframe
     ```
 
     ![](./images/29042025(78).png)
@@ -146,7 +146,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ```python
     %%code
-    one hot encode Geography and Gender features from df
+    One hot encode Geography and Gender features from df
     ```
 
     ![](./images/29042025(125).png)
@@ -159,7 +159,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ```python
     %%code
-    create a random forest classification model for customer churn using the 'Exited' feature for prediction
+    Create a random forest classification model for customer churn using the 'Exited' feature for prediction
     ```
 
     Create a confusion matrix using Copilot.
@@ -168,7 +168,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ```python
     %%code
-    create a confusion matrix
+    Create a confusion matrix
     ```
 
 ## Summary  
