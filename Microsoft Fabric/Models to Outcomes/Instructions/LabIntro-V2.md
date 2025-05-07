@@ -72,7 +72,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 ## Let's Get Started with Power BI Portal
 
-1. Once the lab is ready, **"Choose privacy settings for your device"** screen will appear and click **Accept** to continue.
+1. Once the lab is ready, the **"Choose privacy settings for your device"** screen will appear and click **Accept** to continue.
 
    ![](./images/29042025(93).png)
  
@@ -108,11 +108,11 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. You will be navigated to the **Microsoft** **Fabric Home page**.
 
-    ![alt text](image-4.png)
+   ![alt text](image-4.png)
 
-    >**Note:** If you receive any pop-ups, please **Close** them.
+   >**Note:** If you receive any pop-ups, please **Close** them.
 
-    ![](./images/29042025(95).png)
+   ![](./images/29042025(95).png)
    
 ## Support Contact
  
