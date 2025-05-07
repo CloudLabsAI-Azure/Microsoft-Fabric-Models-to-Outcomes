@@ -26,6 +26,10 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
     ![](./images/29042025(69).png)
 
+    > **Note:** If you’re unable to find Copilot, click the **ellipsis** **(…)** and select **Copilot** from the menu.
+
+    ![](./images/29042025(116).png)
+
 1. Click on **Get Started** in the Copilot chat window. You'll notice a new cell added at the top of the notebook, which is essential for activating Copilot in the notebook. Make sure to **execute this first cell to activate Copilot** and allow it to understand the notebook's context.
 
    ![](./images/29042025(70).png)
@@ -48,6 +52,8 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
 
 5. **Generate Code with Natural Language Instructions**:
 
+    Click **+ Code** in the notebook to add a new cell, and enter the Copilot prompt below.
+
     Use the `%%code` magic command to write natural language instructions to generate code.
 
     ***## Copilot Prompt:***
@@ -57,7 +63,21 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     Load churn.csv from the Files folder into a pandas dataframe and then print the first 5 records
     ```
 
-    ![](./images/29042025(74).png)
+    ![](./images/29042025(118).png)
+
+    > **Note:** If you encounter any issues while running the Python code, please follow the steps below:
+
+    * Expand your **Lakehouse** and navigate to the **Files** used in the previous exercise. After successfully executing the first cell, right-click on **churn.csv** and select **Copy File API Path**.
+
+        ![](./images/29042025(117).png)
+
+    * After copying the API path, update the `file_path` variable in the code and re-run the cell.
+
+        ![](./images/29042025(119).png)
+
+    * You should now see the expected output.
+
+        ![](./images/29042025(118).png)
 
 6. **Use Copilot Chat Pane**:
 
@@ -68,7 +88,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     Generate a code for calculating the percentage of customers who have churned in the dataset and display the results.
     ```
 
-    ![](./images/29042025(75).png)
+    ![](./images/29042025(120).png)
 
     Alternatively, you can continue using the `%%code` magic **within the notebook cell**.
 
@@ -78,6 +98,8 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     %%code
     Generate a code for calculating the percentage of customers who have churned in the dataset and display the results.
     ```
+
+    ![](./images/29042025(121).png)
     
 7. **Data Cleansing**:
 
@@ -90,7 +112,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     delete null values and duplicate values from the df dataframe. Drop columns 'RowNumber', 'CustomerId', 'Surname' from the df dataframe
     ```
 
-    ![](./images/29042025(76).png)
+    ![](./images/29042025(122).png)
 
 8. **Perform Exploratory Data Analysis**:
 
@@ -103,7 +125,9 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     show the data distribution from all features in the df dataframe as charts
     ```
 
-    ![](./images/29042025(77).png)
+    ![](./images/29042025(123).png)
+
+    ![](./images/29042025(124).png)
 
     Create a correlation chart using Copilot. 
    
@@ -125,11 +149,7 @@ Let's create a **new notebook** from the **Lakehouse** Explorer and dive into th
     one hot encode Geography and Gender features from df
     ```
 
-    ![](./images/29042025(79).png)
-
-    If you encounter an error, you can **regenerate** the result by running the prompt again or copy and paste the **error message into the Copilot chat** window to resolve it.
-
-    ![](./images/29042025(80).png)
+    ![](./images/29042025(125).png)
 
 10. **Model Training and Testing**:
 

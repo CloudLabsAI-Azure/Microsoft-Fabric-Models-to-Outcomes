@@ -81,17 +81,15 @@ You have successfully logged in to **Microsoft OneLake File Explorer** and explo
   
     ![](./images/29042025(113).png)
 
-1. When prompted with the **"Automatically sign in to all desktop apps and websites on this device?"** screen, click **Yes, all apps**.
-
-    ![](./images/29042025(42).png)
-
-1. Once your account has been added successfully, you will see the **"You're all set!"** confirmation screen. Click **Done** to complete the login process.
-
-    ![](./images/29042025(43).png)
-
-1. Click the **File** menu to create a **Blank report** if one is not automatically created for you.
+1. Click on **Blank report** to create a new report.
 
     ![](./images/29042025(48).png)
+
+    >**Note:** If you receive any pop-ups, please **Close** them.
+
+    ![](./images/29042025(111).png)
+
+    ![](./images/29042025(112).png)
 
 1. Click on **Copilot** under the **Home** menu, then select the workspace **ws-<inject key="Deployment ID" enableCopy="false"/>** and click **OK**.
 
